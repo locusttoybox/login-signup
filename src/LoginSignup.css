@@ -100,3 +100,8 @@
     background: #9EC8B9;
     color: #092635;
 }
+
+.flex-row {
+    flex-direction: row;
+    flex: 1;
+}
