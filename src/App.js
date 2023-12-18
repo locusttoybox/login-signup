@@ -1,11 +1,11 @@
-// import logo from './logo.svg';
 import './App.css';
 import LoginSignup from './LoginSignup';
+import Container from './TwoRowFlexGrid';
 
 function App() {
   return (
     <div>
-      <LoginSignup />
+      <Container />
     </div>
   );
 }

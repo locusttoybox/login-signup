@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import './LoginSignup.css';
+import './TwoRowFlexGrid';
 
 import userIcon from './components/assets/user.png';
 import emailIcon from './components/assets/mail.png';
