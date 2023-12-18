@@ -1,0 +1,37 @@
+h1 {
+    font-family: "Montserrat";
+    font-size: 86px;
+    font-weight: 400;
+    color: #FFEFE8;
+    text-align: left;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  
+  .row {
+    display: flex;
+  }
+
+  .column-1, .column-2 {
+    background-color: aquamarine;
+    text-align: center;
+    height: 100vh;
+    align-items: center;
+    display: flex;
+  }
+
+  .column-1 {
+    background-color: #637E76;
+    width: 45%;
+  }
+
+  .column-2 {
+    background-color: #F8DFD4;
+    width: 55%;
+    justify-content: center;
+  }
+
+  .welcome {
+    display: flex;
+    flex-direction: column;
+  }
