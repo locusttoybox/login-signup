@@ -5,23 +5,24 @@
     margin: auto;
     margin-top: 200px;
     margin-bottom: 200px; ;
-    background: white;
+    /* background: white; */
     padding-bottom: 30px;
 }
 
 .header {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
     gap: 9px;
     width: 100%;
     margin-top: 40px;
 }
 
 .text {
+    font-family: 'Montserrat';
+    font-weight: 200;
     color: #092635;
     font-size: 32px;
-    font-weight: 700;
 }
 
 .icons {

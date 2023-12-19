@@ -4,7 +4,7 @@ h1 {
     font-weight: 400;
     color: #FFEFE8;
     text-align: left;
-    padding-left: 50px;
+    padding-left: 80px;
     padding-right: 50px;
   }
   
@@ -28,6 +28,7 @@ h1 {
   .column-2 {
     background-color: #F8DFD4;
     width: 55%;
+    height: 100%;
     justify-content: center;
   }
 
