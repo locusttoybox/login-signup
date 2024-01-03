@@ -1,8 +1,8 @@
 import './App.css';
 // import LoginSignup from './LoginSignup';
-import Container from './TwoRowFlexGrid';
-import './Login';
-import './Signup';
+import Container from './components/Container';
+import './components/Login';
+import './components/Signup';
 
 function App() {
   return (
