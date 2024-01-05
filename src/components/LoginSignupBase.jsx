@@ -3,7 +3,7 @@ import { TextField, Typography, Link, InputAdornment } from '@mui/material';
 // import { AccountCircle, Mail, Lock } from '@mui/icons-material';
 import './LoginSignupBase.css';
 import './Container';
-import { buttonStyles } from '../styles/buttonStyles';
+import buttonStyles from '../styles/buttonStyles';
 import { Button} from '@mui/material';
 
 import userIcon from '../assets/user.png';
