@@ -1,12 +1,15 @@
 .container {
     display: flex;
     flex-direction: column;
+    display: flex;
+    flex-direction: column;
     width: 600px;
     margin: auto;
-    margin-top: 200px;
-    margin-bottom: 200px; ;
-    /* background: white; */
+    margin-top: 150px;
     padding-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .header {
@@ -23,6 +26,9 @@
     font-weight: 200;
     color: #092635;
     font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .icons {
@@ -31,10 +37,11 @@
 }
 
 .inputs {
-    margin-top: 55px;
+    margin-top: 32px;
     display: flex;
     flex-direction: column;
     gap: 25px;
+    align-items: center;
 }
 
 .input {
@@ -43,8 +50,9 @@
     margin: auto;
     width: 480px;
     height: 80px;
-    background-color: #9EC8B9;
+    background-color: #FFEFE8;
     border-radius: 6px;
+    font-family: 'Roboto';
 }
 
 .input img {
@@ -61,6 +69,7 @@
     outline: none;
     color: #092635;
     font-size: 19px;
+    margin-left: 20px;
 }
 
 .forgot-password {
@@ -70,6 +79,8 @@
     margin-top: 24px;
     font-size: 16px;
     color: #092635;
+    font-family: 'Roboto';
+    font-weight: 500;
 }
 
 .forgot-password span {
@@ -81,6 +92,7 @@
     display: flex;
     gap: 30px;
     margin: 60px auto;
+    align-items: center;
 }
 
 .submit {
