@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { TextField, Typography, Link, InputAdornment } from '@mui/material';
 // import { AccountCircle, Mail, Lock } from '@mui/icons-material';
-import './LoginSignupBase.css';
-import './Container';
+import './styles.css';
+import '../screens/Container';
 import buttonStyles from '../styles/buttonStyles';
-import { Button} from '@mui/material';
+import Button from '../components/button'
+
 
 import userIcon from '../assets/user.png';
 import emailIcon from '../assets/mail.png';
@@ -90,25 +91,20 @@ const LoginSignupBase = ({ action, onActionChange }) => {
 
         <div className="submit-container">
           <Button
-            variant="contained"
-            color='primary'
             className={`${root} ${action === 'Login' ? 'submit' : 'submit gray'}`}
             onClick={() => {
               onActionChange('Sign up');
             }}
-          >
-            Sign up
-          </Button>
+            text={"Sign up"}
+            main
+          />
           <Button
-            variant="contained"
-            color='primary'
             className={`${root} ${action === 'Sign up' ? 'submit' : 'submit gray'}`}
             onClick={() => {
               onActionChange('Login');
             }}
-          >
-            Login
-          </Button>
+            text={'Login'}
+          />
         </div>
       </div>
     );
