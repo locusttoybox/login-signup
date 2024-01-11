@@ -3,10 +3,17 @@ import { Button as MButton} from '@mui/material';
 
 const Button = ({text, onClick, main }) => {
     return (
-        <MButton
+      <MButton
         variant="contained"
         color={main ? 'primary' : 'secondary'}
         onClick= {onClick}
+        sx={{
+          backgroundColor: main ? '#092635' : '#1B4242',
+          borderRadius: '20px,'
+          '&:hover': {
+            backgroundColor: main ? 'red' : 'blue'
+          }
+        }}
       >
         {text}
       </MButton>
