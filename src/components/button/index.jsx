@@ -10,9 +10,6 @@ const Button = ({text, onClick, main }) => {
         sx={{
           backgroundColor: main ? '#092635' : '#1B4242',
           borderRadius: '20px,'
-          '&:hover': {
-            backgroundColor: main ? 'red' : 'blue'
-          }
         }}
       >
         {text}
