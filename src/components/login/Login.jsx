@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 import { TextField, Link, Typography, InputAdornment, Grid } from '@mui/material';
-// import Button from '../../components/Button';
-// import ButtonStyles from '../../styles/buttonStyles';
 import '../../components/styles.css';
 
 import userIcon from '../../assets/user.png';
 import passwordIcon from '../../assets/padlock.png';
     
+import Button from '../../components/button';
 import HyperlinkStyle from '../../styles/hyperlinkStyles';
 import StyledCheckbox from '../../styles/checkboxStyles';
 
@@ -74,14 +73,14 @@ const Login = ({ onActionChange, action }) => {
                                 </Grid>
                         </div>
                 <div className="submit-container">
-          {/* <ButtonStyles 
+          <Button
             className={`${action === 'Login' ? 'submit' : 'submit gray'}`}
             onClick={() => {
               onActionChange('Sign up');
             }}
             text={"Sign up"}
             main
-            /> */}
+            />
             </div>
         </div>
     );

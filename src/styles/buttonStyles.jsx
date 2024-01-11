@@ -6,5 +6,5 @@ const ButtonStyles  = styled(Button) ({
     color: 'red',
     border: '0',
 })
-s
+
 export default ButtonStyles;
