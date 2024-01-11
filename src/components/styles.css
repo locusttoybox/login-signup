@@ -1,3 +1,4 @@
+
 .container {
     display: flex;
     flex-direction: column;
@@ -40,7 +41,6 @@
     margin-top: 32px;
     display: flex;
     flex-direction: column;
-    gap: 25px;
     align-items: center;
 }
 
@@ -48,20 +48,23 @@
     display: flex;
     align-items: center;
     margin: auto;
-    width: 480px;
+    width: 100%;
+    max-width: 500px;
     height: 80px;
     background-color: #FFEFE8;
     border-radius: 6px;
     font-family: 'Roboto';
+    margin-left: 10px;
 }
 
 .input img {
     width: 20px;
     height: 20px;
-    margin: 0px 30px;
+    margin: 0px 20px;
 }
 
 .input input {
+    flex: 1;
     height: 50px;
     width: 500px;
     background: transparent;
@@ -118,3 +121,4 @@
     flex-direction: row;
     flex: 1;
 }
+

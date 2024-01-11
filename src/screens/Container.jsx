@@ -1,10 +1,11 @@
 import React from 'react';
 import { Container, Grid, Typography } from '@mui/material';
 import './Container.css';
-import LoginSignup from'./LoginSignupBase';
+import Login from '../components/login/Login';
+import Signup from '../components/signup/Signup';
 
 
-const AppContainer = () => {
+const customContainer = () => {
 
   return ( 
     <Container className='row'>
@@ -18,7 +19,8 @@ const AppContainer = () => {
         </Grid>
         <Grid item xs={12} md={5} className='column-2'>
           <div className="login-signup">
-            <LoginSignup />
+            <Login/>
+            <Signup/>
           </div>
         </Grid>
       </Grid>
@@ -26,7 +28,7 @@ const AppContainer = () => {
   )
 }
 
-export default AppContainer;
+export default customContainer;
 
 
 

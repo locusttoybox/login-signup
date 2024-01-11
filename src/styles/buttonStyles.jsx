@@ -1,14 +1,10 @@
 import { styled } from '@mui/system';
-// import Button from '@mui/material/Button';
+import Button from '@mui/material/Button';
 
-const buttonStyles = styled((Button) => ({
-  root: {
+const ButtonStyles  = styled(Button) ({
     borderRadius: '4px',
     color: 'red',
     border: '0',
-  },
-}));
-
-
-
-export default buttonStyles;
+})
+s
+export default ButtonStyles;
