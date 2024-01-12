@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD:src/components/login/Login.jsx
 import React, { useState } from 'react';
 import { TextField, Link, Typography, InputAdornment, Grid } from '@mui/material';
 import '../../components/styles.css';
@@ -10,39 +8,12 @@ import passwordIcon from '../../assets/padlock.png';
 import Button from '../../components/button';
 import HyperlinkStyle from '../../styles/hyperlinkStyles';
 import StyledCheckbox from '../../styles/checkboxStyles';
-=======
-// import React, { useState } from 'react';
-// import LoginSignupBase from './LoginSignupBase';
 
-// const Login = () => {
-//     const [action, setAction] = useState('Login');
->>>>>>> parent of 67f588d (deleted loginSignupBase, made changes to app.js, created buttonStyles, hyperlinkStyles, checkboxStyles, integrated them into login.jsx):src/components/Login.jsx
-
-=======
-// import React, { useState } from 'react';
-// import LoginSignupBase from './LoginSignupBase';
-
-// const Login = () => {
-//     const [action, setAction] = useState('Login');
-
->>>>>>> parent of 67f588d (deleted loginSignupBase, made changes to app.js, created buttonStyles, hyperlinkStyles, checkboxStyles, integrated them into login.jsx)
-//     return <LoginSignupBase action={action} onActionChange={setAction} />
-// }
-
-// export default Login;
-
-
-import React from 'react';
-import { TextField, Typography, Link, InputAdornment } from '@mui/material';
-import Button from '../components/button';
-import buttonStyles from '../styles/buttonStyles';
-
-import userIcon from '../assets/user.png';
-import passwordIcon from '../assets/padlock.png';
 
 const Login = ({ onActionChange, action }) => {
-    const { root } = buttonStyles;
-    
+    const [rememberMe, setRememberMe] = useState();
+
+
     return (
         <div className="container">
             <div className="header">
@@ -51,7 +22,7 @@ const Login = ({ onActionChange, action }) => {
                 </Typography>
             </div>
             <div className="inputs">
-                <div className="input">
+                <div className="input" style={{ marginBottom: '25px'}}>
                     <TextField
                         type='text'
                         placeholder='Username'
@@ -82,32 +53,34 @@ const Login = ({ onActionChange, action }) => {
                                     )
                                 }} />
                              </div>
+                                <Grid container alignItems='center' justifyContent='space-between' style={{ marginTop: '12px'}}>
+                                    <Grid item container alignItems='center' xs={6}>
+                                        <StyledCheckbox
+                                            checked={rememberMe}
+                                            onChange={() => {
+                                                setRememberMe(!rememberMe)
+                                            }}
+                                        />
+                                        <Typography variant='body2' color='white'>
+                                            Remember me
+                                        </Typography>
+                                    </Grid>
+                                    <Grid item xs={6} style={{ textAlign: 'right' }}>
+                                        <Link href='#' sx={HyperlinkStyle().passwordLink}>
+                                            Forgot password?
+                                        </Link>
+                                    </Grid>
+                                </Grid>
                         </div>
                 <div className="submit-container">
           <Button
-<<<<<<< HEAD
-<<<<<<< HEAD:src/components/login/Login.jsx
             className={`${action === 'Login' ? 'submit' : 'submit gray'}`}
-=======
-            className={`${root} ${action === 'Login' ? 'submit' : 'submit gray'}`}
->>>>>>> parent of 67f588d (deleted loginSignupBase, made changes to app.js, created buttonStyles, hyperlinkStyles, checkboxStyles, integrated them into login.jsx):src/components/Login.jsx
-=======
-            className={`${root} ${action === 'Login' ? 'submit' : 'submit gray'}`}
->>>>>>> parent of 67f588d (deleted loginSignupBase, made changes to app.js, created buttonStyles, hyperlinkStyles, checkboxStyles, integrated them into login.jsx)
             onClick={() => {
               onActionChange('Sign up');
             }}
             text={"Sign up"}
             main
-<<<<<<< HEAD
-<<<<<<< HEAD:src/components/login/Login.jsx
             />
-=======
-          />
->>>>>>> parent of 67f588d (deleted loginSignupBase, made changes to app.js, created buttonStyles, hyperlinkStyles, checkboxStyles, integrated them into login.jsx):src/components/Login.jsx
-=======
-          />
->>>>>>> parent of 67f588d (deleted loginSignupBase, made changes to app.js, created buttonStyles, hyperlinkStyles, checkboxStyles, integrated them into login.jsx)
             </div>
         </div>
     );
