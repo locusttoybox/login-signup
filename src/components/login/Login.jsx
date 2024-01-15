@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
-import { TextField, Link, Typography, InputAdornment, Grid } from '@mui/material';
+import { TextField, Typography, InputAdornment, Grid } from '@mui/material';
 import '../../components/styles.css';
 
 import userIcon from '../../assets/user.png';
 import passwordIcon from '../../assets/padlock.png';
     
 import Button from '../../components/button';
-import HyperlinkStyle from '../../styles/hyperlinkStyles';
-import StyledCheckbox from '../../styles/checkboxStyles';
+import StyledLink from '../../components/link';
+import Checkbox from '../../components/checkbox';
 
 
 const Login = ({ onActionChange, action }) => {
@@ -25,13 +25,12 @@ const Login = ({ onActionChange, action }) => {
                 <div className="input" style={{ marginBottom: '25px'}}>
                     <TextField
                         type='text'
-                        placeholder='Username'
                         name=''
                         variant='outlined'
                         fullWidth
                         InputProps={{
                             startAdornment: (
-                            <InputAdornment possition="start">
+                            <InputAdornment position="start">
                              <img src={userIcon} alt="" />
                              </InputAdornment>
                                 ),
@@ -47,7 +46,7 @@ const Login = ({ onActionChange, action }) => {
                                 fullWidth
                                 InputProps={{
                                     startAdornment: (
-                                        <InputAdornment possition='start'>
+                                        <InputAdornment position='start'>
                                             <img src={passwordIcon} alt="" />
                                         </InputAdornment>
                                     )
@@ -55,7 +54,7 @@ const Login = ({ onActionChange, action }) => {
                              </div>
                                 <Grid container alignItems='center' justifyContent='space-between' style={{ marginTop: '12px'}}>
                                     <Grid item container alignItems='center' xs={6}>
-                                        <StyledCheckbox
+                                        <Checkbox
                                             checked={rememberMe}
                                             onChange={() => {
                                                 setRememberMe(!rememberMe)
@@ -66,9 +65,9 @@ const Login = ({ onActionChange, action }) => {
                                         </Typography>
                                     </Grid>
                                     <Grid item xs={6} style={{ textAlign: 'right' }}>
-                                        <Link href='#' sx={HyperlinkStyle().passwordLink}>
-                                            Forgot password?
-                                        </Link>
+                                    <StyledLink href='#' sx={StyledLink().passwordLink}>
+                                        Forgot password?
+                                     </StyledLink>
                                     </Grid>
                                 </Grid>
                         </div>
@@ -79,7 +78,6 @@ const Login = ({ onActionChange, action }) => {
               onActionChange('Sign up');
             }}
             text={"Sign up"}
-            main
             />
             </div>
         </div>

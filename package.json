@@ -6,7 +6,7 @@
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.15.2",
-    "@mui/material": "^5.15.2",
+    "@mui/material": "^5.15.4",
     "@mui/styled-engine-sc": "^6.0.0-alpha.10",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -24,7 +24,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "eslintConfig": {
+  "eslintconfig": {
     "extends": [
       "react-app",
       "react-app/jest"
@@ -43,4 +43,3 @@
     ]
   }
 }
-

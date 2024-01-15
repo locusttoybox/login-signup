@@ -17,7 +17,6 @@
   import React from 'react';
   import { TextField, Typography, InputAdornment } from '@mui/material';
   import Button from '../../components/button';
-  import buttonStyles from '../../styles/buttonStyles';
   import '../../components/styles.css';
 
 
@@ -26,7 +25,6 @@
   import passwordIcon from '../../assets/padlock.png';
 
   const SignUp = ({ onActionChange, action }) => {
-    const { root } = buttonStyles;
 
     return (
       <><div className="container">
@@ -91,7 +89,7 @@
               </div>
             </div>
               <Button
-              className={`${root} ${action === 'Sign up' ? 'submit' : 'submit gray'}`}
+              className={`${action === 'Sign up' ? 'submit' : 'submit gray'}`}
               onClick={() => {
                 onActionChange('Login');
               }}
