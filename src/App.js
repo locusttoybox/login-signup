@@ -13,11 +13,18 @@ const theme = createTheme({
       main: red[500],
     },
     secondary: {
-      main: green[400],
+      main: '#F5EEE6',
     },
   },
   typography: {
     fontFamily: 'Montserrat',
+    h1 : {
+      fontSize: 96,
+      marginRight: 60,
+    },
+    h4 : {
+      fontSize: 16,
+    }
   }
 });
 
