@@ -1,16 +1,18 @@
 import React, { useState } from 'react';
-import { styled , ThemeProvider, createTheme} from '@mui/material';
+import { styled } from '@mui/material';
 import { Checkbox as MCheckbox } from '@mui/material';
 
-const theme = createTheme();
+
+
 
 const StyledCheckbox = styled(MCheckbox)(({ theme }) => ({
-    color: 'white',
+    color: theme.palette.secondary.main,
   
     '&.Mui-checked': {
-      color: '#092635',
+      color: theme.palette.secondary.main,
     },
   }));
+  
 
 
   const Checkbox = ({ text }) => {
@@ -20,7 +22,6 @@ const StyledCheckbox = styled(MCheckbox)(({ theme }) => ({
     };
 
     return (
-      <ThemeProvider theme={theme}>
        <StyledCheckbox
       checked={checked}
       onChange={handleChange}
@@ -28,7 +29,6 @@ const StyledCheckbox = styled(MCheckbox)(({ theme }) => ({
       >
       {text}
       </StyledCheckbox>
-      </ThemeProvider>
     )
   }
 

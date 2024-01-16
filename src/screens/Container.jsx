@@ -4,6 +4,9 @@ import './Container.css';
 import Login from '../components/login/Login';
 import Signup from '../components/signup/Signup';
 
+import Title from '../components/typography';
+
+
 
 const customContainer = () => {
 
@@ -12,10 +15,8 @@ const customContainer = () => {
       <Grid container>
         <Grid item xs={12} md={7} className="column-1">
           <div className="welcome">
-            <Typography variant="h1" className='custom-h1'>
-              Welcome to your nameday app
-            </Typography>
-          </div>
+          <Title text='Welocome to your name day app' size='h1'/>
+           </div>
         </Grid>
         <Grid item xs={12} md={5} className='column-2'>
           <div className="login-signup">
