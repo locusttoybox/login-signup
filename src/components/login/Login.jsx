@@ -8,7 +8,7 @@ import passwordIcon from '../../assets/padlock.png';
 import Button from '../../components/button';
 import Link from '../../components/link';
 import Checkbox from '../../components/checkbox';
-
+import Text from '../../components/text';
 
 const Login = ({ onActionChange, action }) => {
     const [rememberMe, setRememberMe] = useState();
@@ -60,9 +60,8 @@ const Login = ({ onActionChange, action }) => {
                                                 setRememberMe(!rememberMe)
                                             }}
                                         />
-                                        <Typography variant='body2' color='white'>
-                                            Remember me
-                                        </Typography>
+                                        <Text text= 'Remember me'/>
+
                                     </Grid>
                                     <Grid item xs={6} style={{ textAlign: 'right' }}>
                                     <Link text="Forgot password">

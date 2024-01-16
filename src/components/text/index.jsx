@@ -10,11 +10,11 @@ const StyledTypography = styled(MTypography)(({ theme }) => ({
     },
   }));
 
-  const Title = ({ text, size }) => {
+  const Text = ({ text }) => {
 
 
     return (
-    <StyledTypography variant={size}>
+    <StyledTypography>
         {text}
      </StyledTypography>
     )
@@ -22,4 +22,4 @@ const StyledTypography = styled(MTypography)(({ theme }) => ({
 
 
 
-export default Title;
+export default Text;

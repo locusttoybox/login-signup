@@ -2,10 +2,10 @@ import { styled } from '@mui/system';
 import { Button as MButton } from '@mui/material';
 
 const StyledButton = styled(MButton)(({ theme }) => ({
-  backgroundColor: theme.palette.secondary,
-  color: theme.palette.common.white,
+  backgroundColor: theme.palette.secondary.main,
+  color: theme.palette.common,
   '&:hover': {
-    backgroundColor: theme.palette.secondary.dark,
+    backgroundColor: theme.palette.secondary,
   },
 }));
 
