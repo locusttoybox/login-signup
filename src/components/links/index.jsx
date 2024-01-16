@@ -8,9 +8,8 @@ const StyledLink = styled(MLink) (({ theme }) => ({
 
 const Link = ({ text }) => {
         return (
-        <StyledLink hrex='#'
-        {text}
-        >
+        <StyledLink href='#'>
+         {text}
         </StyledLink>
         )               
 }
