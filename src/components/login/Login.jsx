@@ -6,7 +6,7 @@ import userIcon from '../../assets/user.png';
 import passwordIcon from '../../assets/padlock.png';
     
 import Button from '../../components/button';
-import StyledLink from '../../components/link';
+import Link from '../../components/link';
 import Checkbox from '../../components/checkbox';
 
 
@@ -65,9 +65,8 @@ const Login = ({ onActionChange, action }) => {
                                         </Typography>
                                     </Grid>
                                     <Grid item xs={6} style={{ textAlign: 'right' }}>
-                                    <StyledLink href='#' sx={StyledLink().passwordLink}>
-                                        Forgot password?
-                                     </StyledLink>
+                                    <Link text="Forgot password">
+                                    </Link>
                                     </Grid>
                                 </Grid>
                         </div>

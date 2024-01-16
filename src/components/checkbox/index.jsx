@@ -1,7 +1,10 @@
-import { styled } from '@mui/material';
-import MCheckbox from '@mui/material/Checkbox';
+import React, { useState } from 'react';
+import { styled , ThemeProvider, createTheme} from '@mui/material';
+import { Checkbox as MCheckbox } from '@mui/material';
 
-const Checkbox = styled(MCheckbox)(({ theme }) => ({
+const theme = createTheme();
+
+const StyledCheckbox = styled(MCheckbox)(({ theme }) => ({
     color: 'white',
   
     '&.Mui-checked': {
@@ -9,4 +12,24 @@ const Checkbox = styled(MCheckbox)(({ theme }) => ({
     },
   }));
 
-export default Checkbox;  
+
+  const Checkbox = ({ text }) => {
+    const [checked, setChecked] = useState(false);
+    const handleChange = () => {
+      setChecked(!checked);
+    };
+
+    return (
+      <ThemeProvider theme={theme}>
+       <StyledCheckbox
+      checked={checked}
+      onChange={handleChange}
+      inputProps={{ 'aria-label': 'Remember me checkbox' }}
+      >
+      {text}
+      </StyledCheckbox>
+      </ThemeProvider>
+    )
+  }
+
+export default Checkbox;
