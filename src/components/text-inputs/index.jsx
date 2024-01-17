@@ -1,10 +1,10 @@
 import React from 'react';
-import { styled } from '@mui/material';
-import { TextField as MTextInputs } from '@mui/material';
+import { InputAdornment, styled } from '@mui/material';
+import { TextField as MInputs } from '@mui/material';
 import { Grid } from '@mui/material'; 
 
 
-const StyledTextInputs = styled(MTextInputs)(({ theme }) => ({
+const StyledInputs = styled(MInputs)(({ theme }) => ({
     color: theme.palette.secondary.main,
   
     '&.Mui-checked': {
@@ -13,16 +13,23 @@ const StyledTextInputs = styled(MTextInputs)(({ theme }) => ({
   }));
 
 
-  const TextInputs = ({ size }) => {
+  const Inputs = ({ size, icon }) => {
 
 
     return (
-        <Grid item xs={12} md={6}>
-            <StyledTextInputs type='text' name=''id='' variant='filled' fullWidth={true} size={size}/>
+        <Grid item xs={12} md={6} style={{ gap: '25px' }}>
+            <StyledInputs type='text' name=''id='' variant='filled' fullWidth={true} size={size} 
+            InputProps= {{
+                startAdornment: (
+                    <InputAdornment position='start'>
+                        <img src={icon} alt="Icon" style={{ width: 20, height: 20}} />
+                    </InputAdornment>
+                )
+            }} />
         </Grid>
     )
   };
 
 
 
-export default TextInputs;
+export default Inputs;

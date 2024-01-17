@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { TextField, Typography, InputAdornment, Grid } from '@mui/material';
+import { Typography, Grid } from '@mui/material';
 import '../../components/styles.css';
 
 import userIcon from '../../assets/user.png';
@@ -9,7 +9,7 @@ import Button from '../../components/button';
 import Link from '../../components/link';
 import Checkbox from '../../components/checkbox';
 import Text from '../../components/text';
-import TextInputs from '../../components/text-inputs'
+import Inputs from '../../components/inputs';
 
 const Login = ({ onActionChange, action }) => {
     const [rememberMe, setRememberMe] = useState();
@@ -23,9 +23,11 @@ const Login = ({ onActionChange, action }) => {
                 </Typography>
             </div>
             <div className="inputs">
-                <Grid container spacing={2}>
-                    <TextInputs text='Username' size='medium'/>
-                    <TextInputs text='Password' size='medium'/>
+                <Grid>
+                    <Inputs text='Username' size='medium' icon={userIcon}/>
+                </Grid>
+                <Grid>
+                    <Inputs text='Password' size='medium' icon={passwordIcon}/>
                 </Grid>
                     <Grid container alignItems='center' justifyContent='space-between' style={{ marginTop: '12px'}}>
                         <Grid item container alignItems='center' xs={6}>
