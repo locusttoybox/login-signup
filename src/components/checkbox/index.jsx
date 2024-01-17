@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { styled } from '@mui/system ';
+import { styled } from '@mui/material';
 import { Checkbox as MCheckbox } from '@mui/material';
 
 

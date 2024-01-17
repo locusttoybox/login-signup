@@ -1,5 +1,7 @@
+import React from 'react';
 import { styled } from '@mui/material';
 import { TextField as MTextInputs } from '@mui/material';
+import { Grid } from '@mui/material'; 
 
 
 const StyledTextInputs = styled(MTextInputs)(({ theme }) => ({
@@ -10,13 +12,14 @@ const StyledTextInputs = styled(MTextInputs)(({ theme }) => ({
     },
   }));
 
-  const TextInputs = ({ text, size }) => {
+
+  const TextInputs = ({ size }) => {
 
 
     return (
-    <StyledTextInputs variant={size}>
-        {text}
-     </StyledTextInputs>
+        <Grid item xs={12} md={6}>
+            <StyledTextInputs type='text' name=''id='' variant='filled' fullWidth={true} size={size}/>
+        </Grid>
     )
   };
 
