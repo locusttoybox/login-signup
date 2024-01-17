@@ -5,10 +5,18 @@ import { Grid } from '@mui/material';
 
 
 const StyledInputs = styled(MInputs)(({ theme }) => ({
-    color: theme.palette.secondary.main,
-  
-    '&.Mui-checked': {
-      color: theme.palette.secondary.main,
+    '& .MuiInputBase-root': {
+        color: theme.palette.secondary,
+    },
+    '& .MuiInputLabel-root': {
+        color: theme.palette.secondary,
+    },
+    '& .MuiFilledInput-root': {
+        backgroundColor: '#fff',
+    },
+    '& .MuiInputAdornment-root img': {
+        width: 20,
+        height: 20,
     },
   }));
 
@@ -22,7 +30,7 @@ const StyledInputs = styled(MInputs)(({ theme }) => ({
             InputProps= {{
                 startAdornment: (
                     <InputAdornment position='start'>
-                        <img src={icon} alt="Icon" style={{ width: 20, height: 20}} />
+                        <img src={icon} alt="Icon"/>
                     </InputAdornment>
                 )
             }} />
