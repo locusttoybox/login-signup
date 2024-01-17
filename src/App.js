@@ -5,7 +5,7 @@ import Login from './components/login/Login';
 import Signup from './components/signup/Signup';
 
 import { ThemeProvider, createTheme } from '@mui/material';
-import { red } from '@mui/material/colors';
+// import { white } from '@mui/material/colors';
 
 const theme = createTheme({
   palette: {
@@ -13,7 +13,7 @@ const theme = createTheme({
       main: '#F5EEE6',
     },
     secondary: {
-      main: '#1B4242',
+      main: '#F5EEE6',
     },
   },
   typography: {

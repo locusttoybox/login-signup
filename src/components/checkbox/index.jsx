@@ -7,6 +7,9 @@ import { Checkbox as MCheckbox } from '@mui/material';
 
 const StyledCheckbox = styled(MCheckbox)(({ theme }) => ({
     color: theme.palette.secondary.main,
+    color: '#F5EEE6',
+    fontSize: 16,
+    fontFamily: 'Roboto',
   
     '&.Mui-checked': {
       color: theme.palette.secondary.main,
