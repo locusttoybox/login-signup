@@ -5,7 +5,7 @@ import Login from './components/login/Login';
 import Signup from './components/signup/Signup';
 
 import { ThemeProvider, createTheme } from '@mui/material';
-import { green, red } from '@mui/material/colors';
+import { red } from '@mui/material/colors';
 
 const theme = createTheme({
   palette: {
@@ -23,8 +23,9 @@ const theme = createTheme({
       marginRight: 60,
     },
     h4 : {
-      fontSize: 16,
-    }
+      fontSize: 32,
+      color: '#F5EEE6',
+    },
   }
 });
 
