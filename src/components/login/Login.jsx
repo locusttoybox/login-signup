@@ -17,7 +17,7 @@ const Login = ({ onActionChange, action }) => {
     return (
         <div className="container">
             <div className="header">
-                <Typography variant='h4'>
+                <Typography variant='h2'>
                     Login
                 </Typography>
             </div>

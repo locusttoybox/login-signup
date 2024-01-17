@@ -17,14 +17,24 @@ const theme = createTheme({
     },
   },
   typography: {
-    fontFamily: 'Montserrat',
     h1 : {
       fontSize: 96,
       marginRight: 60,
+      fontFamily: 'Montserrat',
     },
-    h4 : {
+
+    h2 : {
       fontSize: 32,
       color: '#F5EEE6',
+      fontFamily: 'Roboto',
+      fontWeight: 'bold',
+      letterSpacing: 1,
+    },
+
+    h4 : {
+      fontSize: 16,
+      color: '#F5EEE6',
+      fontFamily: 'Roboto',
     },
   }
 });
