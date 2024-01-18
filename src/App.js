@@ -5,19 +5,37 @@ import Login from './components/login/Login';
 import Signup from './components/signup/Signup';
 
 import { ThemeProvider, createTheme } from '@mui/material';
-import { green, red } from '@mui/material/colors';
+// import { white } from '@mui/material/colors';
 
 const theme = createTheme({
   palette: {
     primary: {
-      main: red[500],
+      main: '#F5EEE6',
     },
     secondary: {
-      main: green[400],
+      main: '#F5EEE6',
     },
   },
   typography: {
-    fontFamily: 'Montserrat',
+    h1 : {
+      fontSize: 96,
+      marginRight: 60,
+      fontFamily: 'Montserrat',
+    },
+
+    h2 : {
+      fontSize: 32,
+      color: '#F5EEE6',
+      fontFamily: 'Roboto',
+      fontWeight: 'bold',
+      letterSpacing: 1,
+    },
+
+    h4 : {
+      fontSize: 16,
+      color: '#F5EEE6',
+      fontFamily: 'Roboto',
+    },
   }
 });
 
