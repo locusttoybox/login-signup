@@ -15,13 +15,13 @@ const Login = ({onActionChange, action}) => {
   const [rememberMe, setRememberMe] = useState();
 
   return (
-    <div className="container">
+    <div className="container" style={{ paddingTop: '15px' }}>
       <div className="header">
-        <Typography variant="h2">Login</Typography>
+        <Typography variant="h2" style={{ marginBottom: '32px' }}>Login</Typography>
       </div>
-      <div className="inputs">
+      <div className="inputs" style={{ width: '65%' }}>
         <Input placeholder="Username" size="medium" icon={userIcon} />
-        <Input placeholder="Password" size="medium" icon={passwordIcon} />
+        <Input placeholder="Password" size="medium" icon={passwordIcon} style={{ paddingTop: '16px' }} />
         <Grid
           container
           alignItems="center"

@@ -5,15 +5,14 @@ import Login from './components/login/Login';
 import Signup from './components/signup/Signup';
 
 import { ThemeProvider, createTheme } from '@mui/material';
-// import { white } from '@mui/material/colors';
 
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#F5EEE6',
+      main: '#2D9596',
     },
     secondary: {
-      main: '#F5EEE6',
+      main: '#092635',
     },
   },
   typography: {
@@ -21,6 +20,8 @@ const theme = createTheme({
       fontSize: 96,
       marginRight: 60,
       fontFamily: 'Montserrat',
+      color: '#F5EEE6',
+      marginBottom: '32px',
     },
 
     h2 : {

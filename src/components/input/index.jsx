@@ -3,22 +3,21 @@ import {InputAdornment, styled} from '@mui/material';
 import {TextField as MInput} from '@mui/material';
 
 const StyledInput = styled(MInput)(({theme}) => ({
-  '& .MuiInputBase-root': {
-    color: theme.palette.secondary,
-  },
   '& .MuiInputLabel-root': {
     color: theme.palette.secondary,
   },
   '& .MuiFilledInput-root': {
-    backgroundColor: '#fff',
+    backgroundColor: '#F5EEE6',
+    radius: '20px,',
   },
   '& .MuiInputAdornment-root img': {
     width: 20,
     height: 20,
+    marginBottom: "15px",
   },
 }));
 
-const Input = ({size, icon, ...props}) => {
+const Input = ({size, icon, ...props }) => {
   return (
     <StyledInput
       {...props}

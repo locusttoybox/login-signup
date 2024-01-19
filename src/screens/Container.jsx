@@ -18,7 +18,7 @@ const customContainer = () => {
           <Title text='Welocome to your name day app' size='h1'/>
            </div>
         </Grid>
-        <Grid item xs={12} md={5} className='column-2'>
+        <Grid item xs={12} md={5} className='column-2' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
           <div className="login-signup">
             <Login/>
             <Signup/>
