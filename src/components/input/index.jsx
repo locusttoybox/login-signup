@@ -6,9 +6,12 @@ const StyledInput = styled(MInput)(({theme}) => ({
   '& .MuiInputLabel-root': {
     color: theme.palette.secondary,
   },
-  '& .MuiFilledInput-root': {
+  '& .MuiInputBase-root': {
     backgroundColor: '#F5EEE6',
-    radius: '20px,',
+    borderRadius: '10px',
+    '&:before, &:after, &:hover:before, &:focus:before': {
+      borderBottom: 'none',
+    },
   },
   '& .MuiInputAdornment-root img': {
     width: 20,
