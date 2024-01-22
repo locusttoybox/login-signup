@@ -6,6 +6,7 @@ import Signup from './components/signup/Signup';
 
 import { ThemeProvider, createTheme } from '@mui/material';
 
+
 const theme = createTheme({
   palette: {
     primary: {
@@ -20,7 +21,6 @@ const theme = createTheme({
       fontSize: 96,
       marginRight: 60,
       fontFamily: 'Montserrat',
-      // color: '#F5EEE6',
       marginBottom: '32px',
     },
 

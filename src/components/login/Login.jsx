@@ -19,14 +19,14 @@ const Login = ({onActionChange, action}) => {
       <div className="header">
         <Typography variant="h2" style={{ marginBottom: '32px' }}>Login</Typography>
       </div>
-      <div className="inputs" style={{ width: '65%' }}>
-        <Input placeholder="Username"  size="medium" icon={userIcon} />
+      <div className="inputs" style={{ width: '65%', alignItems: 'flex-start' }}>
+        <Input placeholder="Username"  size="medium" icon={userIcon}/>
         <Input placeholder="Password" size="medium" icon={passwordIcon} />
         <Grid
           container
           alignItems="center"
           justifyContent="space-between"
-          style={{marginTop: '12px'}}
+          style={{ marginTop: '12px' }}
         >
           <Grid item container alignItems="center" xs={6}>
             <Checkbox
