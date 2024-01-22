@@ -9,10 +9,10 @@ import { ThemeProvider, createTheme } from '@mui/material';
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#2D9596',
+      main: '#092635',
     },
     secondary: {
-      main: '#092635',
+      main: '#F5EEE6',
     },
   },
   typography: {
@@ -20,7 +20,7 @@ const theme = createTheme({
       fontSize: 96,
       marginRight: 60,
       fontFamily: 'Montserrat',
-      color: '#F5EEE6',
+      // color: '#F5EEE6',
       marginBottom: '32px',
     },
 

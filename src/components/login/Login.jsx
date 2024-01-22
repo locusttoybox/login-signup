@@ -1,5 +1,5 @@
-import React, {useState} from 'react';
-import {Typography, Grid} from '@mui/material';
+import React, { useState } from 'react';
+import { Typography, Grid } from '@mui/material';
 import '../../components/styles.css';
 
 import userIcon from '../../assets/user.png';
@@ -20,8 +20,8 @@ const Login = ({onActionChange, action}) => {
         <Typography variant="h2" style={{ marginBottom: '32px' }}>Login</Typography>
       </div>
       <div className="inputs" style={{ width: '65%' }}>
-        <Input placeholder="Username" style= {{ marginBottom: '15px' }} size="medium" icon={userIcon} />
-        <Input placeholder="Password" size="medium" icon={passwordIcon} style={{ paddingTop: '16px' }} />
+        <Input placeholder="Username"  size="medium" icon={userIcon} />
+        <Input placeholder="Password" size="medium" icon={passwordIcon} />
         <Grid
           container
           alignItems="center"

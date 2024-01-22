@@ -1,6 +1,6 @@
 import React from 'react';
-import {InputAdornment, styled} from '@mui/material';
-import {TextField as MInput} from '@mui/material';
+import { InputAdornment, styled } from '@mui/material';
+import { TextField as MInput } from '@mui/material';
 
 const StyledInput = styled(MInput)(({theme}) => ({
   '& .MuiInputLabel-root': {
@@ -11,13 +11,17 @@ const StyledInput = styled(MInput)(({theme}) => ({
     borderRadius: '10px',
     '&:before, &:after, &:hover:before, &:focus:before': {
       borderBottom: 'none',
-    },
+   },
+   '&:after' : {
+    backgroundColor: '#F5EEE6',
+   }
   },
   '& .MuiInputAdornment-root img': {
     width: 20,
     height: 20,
     marginBottom: "15px",
   },
+
 }));
 
 const Input = ({size, icon, ...props }) => {
@@ -30,6 +34,7 @@ const Input = ({size, icon, ...props }) => {
       variant="filled"
       fullWidth={true}
       size={size}
+      style={{ marginTop: '15px' }}
       InputProps={{
         startAdornment: (
           <InputAdornment position="start">
