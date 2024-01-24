@@ -1,35 +1,45 @@
-import React from 'react';
-import { Container, Grid, Typography } from '@mui/material';
+import React, {useState} from 'react';
+import {Container, Grid, Typography} from '@mui/material';
 import './Container.css';
 import Login from '../components/login/Login';
 import Signup from '../components/signup/Signup';
 
 import Title from '../components/typography';
-
-
+import Button from '../components/button';
 
 const customContainer = () => {
+  const [active, setActive] = useState('login');
 
-  return ( 
-    <Container className='row'>
+  const onSubmit = (data) => {
+    if (active === 'login') {
+      console.log('doo login stuff');
+    } else {
+      console.log('do signup stuuf');
+    }
+  };
+
+  return (
+    <Container className="row">
       <Grid container>
         <Grid item xs={12} md={7} className="column-1">
           <div className="welcome">
-          <Title text='Welocome to your name day app' size='h1'/>
-           </div>
+            <Title text="Welcome to your name day app" size="h1" />
+          </div>
         </Grid>
-        <Grid item xs={12} md={5} className='column-2'>
+        <Grid item xs={12} md={5} className="column-2">
+          <Button text="Login" onClick={() => setActive('login')} />
+          <Button text="Signup" onClick={() => setActive('signup')} />
           <div className="login-signup">
-            <Login/>
-            <Signup/>
+            {active === 'login' ? (
+              <Login onSubmit={onSubmit} />
+            ) : (
+              <Signup onSubmit={onSubmit} />
+            )}
           </div>
         </Grid>
       </Grid>
     </Container>
-  )
-}
+  );
+};
 
 export default customContainer;
-
-
-

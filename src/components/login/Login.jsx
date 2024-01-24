@@ -11,7 +11,7 @@ import Checkbox from '../../components/checkbox';
 import Text from '../../components/text';
 import Input from '../../components/input';
 
-const Login = ({onActionChange, action}) => {
+const Login = ({onSubmit}) => {
   const [rememberMe, setRememberMe] = useState();
 
   return (
@@ -44,9 +44,9 @@ const Login = ({onActionChange, action}) => {
       </div>
       <div className="submit-container">
         <Button
-          className={`${action === 'Login' ? 'submit' : 'submit gray'}`}
+          className={'submit'}
           onClick={() => {
-            onActionChange('Sign up');
+            onSubmit();
           }}
           text={'Sign up'}
         />

@@ -6,9 +6,12 @@ const StyledButton = styled(MButton)(({ theme }) => ({
   color: theme.palette.common,
   borderRadius: 15,
   fontSize: 16,
-  color: '#F5EEE6',
+  '&:before' : {
+    backgroundColor: theme.palette.primary.light,
+  },
   '&:hover': {
     backgroundColor: theme.palette.secondary,
+    backgroundColor: '#1B4242',
   },
 }));
 

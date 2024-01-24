@@ -5,12 +5,12 @@ import Login from './components/login/Login';
 import Signup from './components/signup/Signup';
 
 import { ThemeProvider, createTheme } from '@mui/material';
-// import { white } from '@mui/material/colors';
+
 
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#F5EEE6',
+      main: '#092635',
     },
     secondary: {
       main: '#F5EEE6',
@@ -21,6 +21,7 @@ const theme = createTheme({
       fontSize: 96,
       marginRight: 60,
       fontFamily: 'Montserrat',
+      marginBottom: '32px',
     },
 
     h2 : {
@@ -36,6 +37,8 @@ const theme = createTheme({
       color: '#F5EEE6',
       fontFamily: 'Roboto',
     },
+
+
   }
 });
 
