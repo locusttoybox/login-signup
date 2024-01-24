@@ -9,13 +9,8 @@ const StyledInput = styled(MInput)(({theme}) => ({
   '& .MuiInputBase-root': {
     backgroundColor: '#F5EEE6',
     borderRadius: '10px',
-    '&:before, &:after, &:hover:before, &:focus:before' : {
+    '&:before, &:after, &:hover:before, &:focus:before, &Mui:active': {
       borderBottom: 'none',
-   },
-   '& .Mui-active': {
-    backgroundColor: '#F5EEE6',
-    borferBottom: 'none',
-  
    },
   },
   '& .MuiInputAdornment-root img': {

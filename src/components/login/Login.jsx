@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Typography, Grid } from '@mui/material';
+import React, {useState} from 'react';
+import {Typography, Grid} from '@mui/material';
 import '../../components/styles.css';
 
 import userIcon from '../../assets/user.png';
@@ -11,22 +11,22 @@ import Checkbox from '../../components/checkbox';
 import Text from '../../components/text';
 import Input from '../../components/input';
 
-const Login = ({onActionChange, action}) => {
+const Login = ({onSubmit}) => {
   const [rememberMe, setRememberMe] = useState();
 
   return (
-    <div className="container" style={{ paddingTop: '15px' }}>
+    <div className="container">
       <div className="header">
-        <Typography variant="h2" style={{ marginBottom: '32px' }}>Login</Typography>
+        <Typography variant="h2">Login</Typography>
       </div>
-      <div className="inputs" style={{ width: '65%', alignItems: 'flex-start' }}>
-        <Input placeholder="Username"  size="medium" icon={userIcon}/>
+      <div className="inputs">
+        <Input placeholder="Username" size="medium" icon={userIcon} />
         <Input placeholder="Password" size="medium" icon={passwordIcon} />
         <Grid
           container
           alignItems="center"
           justifyContent="space-between"
-          style={{ marginTop: '12px' }}
+          style={{marginTop: '12px'}}
         >
           <Grid item container alignItems="center" xs={6}>
             <Checkbox
@@ -44,9 +44,9 @@ const Login = ({onActionChange, action}) => {
       </div>
       <div className="submit-container">
         <Button
-          className={`${action === 'Login' ? 'submit' : 'submit gray'}`}
+          className={'submit'}
           onClick={() => {
-            onActionChange('Sign up');
+            onSubmit();
           }}
           text={'Sign up'}
         />
