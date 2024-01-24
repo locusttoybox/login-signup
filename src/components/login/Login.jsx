@@ -37,9 +37,12 @@ const Login = ({onSubmit}) => {
             />
             <Text text="Remember me" />
           </Grid>
-          <Grid item xs={6} style={{textAlign: 'right'}}>
+          <Grid item xs={6} style={{ textAlign: 'right' }}>
             <Link text="Forgot password"></Link>
           </Grid>
+        </Grid>
+        <Grid item xs={12} style={{ textAlign: 'center', marginTop: '24px' }}>
+              <Link text="Don't have an account?"></Link>
         </Grid>
       </div>
       <div className="submit-container">
