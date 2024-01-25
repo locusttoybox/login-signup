@@ -1,5 +1,5 @@
-import React, {useState} from 'react';
-import {Container, Grid, Typography} from '@mui/material';
+import React, { useState } from 'react';
+import { Container, Grid } from '@mui/material';
 import './Container.css';
 import Login from '../components/login/Login';
 import Signup from '../components/signup/Signup';
@@ -27,8 +27,8 @@ const customContainer = () => {
           </div>
         </Grid>
         <Grid item xs={12} md={5} className="column-2">
-          <Button text="Login" onClick={() => setActive('login')} />
-          <Button text="Signup" onClick={() => setActive('signup')} />
+            <Button text="Login" onClick={() => setActive('login')} /> 
+            <Button text="Signup" onClick={() => setActive('signup')} />
           <div className="login-signup">
             {active === 'login' ? (
               <Login onSubmit={onSubmit} />

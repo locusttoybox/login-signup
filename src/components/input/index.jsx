@@ -9,26 +9,25 @@ const StyledInput = styled(MInput)(({theme}) => ({
   '& .MuiInputBase-root': {
     backgroundColor: '#F5EEE6',
     borderRadius: '10px',
-    '&:before, &:after, &:hover:before, &:focus:before, &Mui:active': {
-      borderBottom: 'none',
+    '&::before': {
+      borderBottom: '40px',
    },
   },
   '& .MuiInputAdornment-root img': {
     width: 20,
     height: 20,
-    marginBottom: "15px",
+    paddingRight: '10px',
   },
 
 }));
 
-const Input = ({size, icon, ...props }) => {
+const Input = ({ size, icon, ...props }) => {
   return (
     <StyledInput
       {...props}
       type="text"
       name=""
       id=""
-      variant="filled"
       fullWidth={true}
       size={size}
       style={{ marginTop: '15px' }}

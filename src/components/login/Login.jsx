@@ -17,7 +17,7 @@ const Login = ({onSubmit}) => {
   return (
     <div className="container">
       <div className="header">
-        <Typography variant="h2">Login</Typography>
+        <Button text='Login' style={{ width: '30px' }}/>
       </div>
       <div className="inputs">
         <Input placeholder="Username" size="medium" icon={userIcon} />
@@ -44,15 +44,6 @@ const Login = ({onSubmit}) => {
         <Grid item xs={12} style={{ textAlign: 'center', marginTop: '24px' }}>
               <Link text="Don't have an account?"></Link>
         </Grid>
-      </div>
-      <div className="submit-container">
-        <Button
-          className={'submit'}
-          onClick={() => {
-            onSubmit();
-          }}
-          text={'Sign up'}
-        />
       </div>
     </div>
   );
