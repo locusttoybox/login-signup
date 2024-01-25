@@ -44,4 +44,12 @@ h1.custom-h1 {
 
   .inputs {
     margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .styled {
+    display: flex;
+    flex-direction: row;
+    width: 150px;
+    justify-content: space-between;
   }

@@ -2,15 +2,16 @@ import { styled } from '@mui/system';
 import { Button as MButton } from '@mui/material';
 
 const StyledButton = styled(MButton)(({ theme }) => ({
-  backgroundColor: theme.palette.secondary.main,
+  backgroundColor: theme.palette.common.main,
   color: theme.palette.common,
   borderRadius: 15,
   fontSize: 16,
   '&:before' : {
-    backgroundColor: theme.palette.primary.light,
+    backgroundColor: theme.palette,
+    color: '#1B4242',
   },
   '&:hover': {
-    backgroundColor: theme.palette.secondary,
+    backgroundColor: theme.palette,
     backgroundColor: '#1B4242',
   },
 }));

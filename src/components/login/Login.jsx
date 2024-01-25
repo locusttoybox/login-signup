@@ -11,13 +11,12 @@ import Checkbox from '../../components/checkbox';
 import Text from '../../components/text';
 import Input from '../../components/input';
 
-const Login = ({onSubmit}) => {
+const Login = ({ onSubmit }) => {
   const [rememberMe, setRememberMe] = useState();
 
   return (
     <div className="container">
       <div className="header">
-        <Button text='Login' style={{ width: '30px' }}/>
       </div>
       <div className="inputs">
         <Input placeholder="Username" size="medium" icon={userIcon} />

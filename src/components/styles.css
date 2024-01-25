@@ -1,22 +1,9 @@
 
-.container {
-    display: flex;
-    flex-direction: column;
-    display: flex;
-    flex-direction: column;
-    width: 600px;
-    margin: auto;
-    margin-top: 150px;
-    padding-bottom: 30px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
+
 
 .header {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     gap: 9px;
     width: 100%;
     margin-top: 40px;
@@ -37,11 +24,6 @@
     width: 20px;
 }
 
-/* .inputs {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-} */
 
 .input {
     display: flex;
@@ -65,18 +47,8 @@
     outline: none;
     color: #092635;
     font-size: 19px;
-    /* margin-left: 20px; */
 }
 
-/* .forgot-password {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 24px;
-    font-size: 16px;
-    font-family: 'Roboto';
-    font-weight: 500;
-} */
 
 .forgot-password span {
     color: #092635;

@@ -9,6 +9,7 @@ const StyledInput = styled(MInput)(({theme}) => ({
   '& .MuiInputBase-root': {
     backgroundColor: '#F5EEE6',
     borderRadius: '10px',
+    width: '460px',
     '&::before': {
       borderBottom: '40px',
    },
