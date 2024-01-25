@@ -34,9 +34,7 @@ h1.custom-h1 {
   }
 
   .column-2 {
-    flex: 2;
-    height: 100%;
-    justify-content: center;
+    flex: 2; 
   }
 
   .welcome {
