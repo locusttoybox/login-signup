@@ -11,13 +11,12 @@ import Checkbox from '../../components/checkbox';
 import Text from '../../components/text';
 import Input from '../../components/input';
 
-const Login = ({onSubmit}) => {
+const Login = ({ onSubmit }) => {
   const [rememberMe, setRememberMe] = useState();
 
   return (
     <div className="container">
       <div className="header">
-        <Typography variant="h2">Login</Typography>
       </div>
       <div className="inputs">
         <Input placeholder="Username" size="medium" icon={userIcon} />
@@ -37,19 +36,13 @@ const Login = ({onSubmit}) => {
             />
             <Text text="Remember me" />
           </Grid>
-          <Grid item xs={6} style={{textAlign: 'right'}}>
+          <Grid item xs={6} style={{ textAlign: 'right' }}>
             <Link text="Forgot password"></Link>
           </Grid>
         </Grid>
-      </div>
-      <div className="submit-container">
-        <Button
-          className={'submit'}
-          onClick={() => {
-            onSubmit();
-          }}
-          text={'Sign up'}
-        />
+        <Grid item xs={12} style={{ textAlign: 'center', marginTop: '24px' }}>
+              <Link text="Don't have an account?"></Link>
+        </Grid>
       </div>
     </div>
   );

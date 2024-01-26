@@ -15,11 +15,14 @@ const theme = createTheme({
     secondary: {
       main: '#F5EEE6',
     },
+    common :{
+      main: '#9EC8B9',
+    }
   },
   typography: {
     h1 : {
       fontSize: 96,
-      marginRight: 60,
+      marginRight: 75,
       fontFamily: 'Montserrat',
       marginBottom: '32px',
     },
