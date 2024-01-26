@@ -22,7 +22,7 @@ const theme = createTheme({
   typography: {
     h1 : {
       fontSize: 96,
-      marginRight: 60,
+      marginRight: 75,
       fontFamily: 'Montserrat',
       marginBottom: '32px',
     },

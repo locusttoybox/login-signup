@@ -6,6 +6,8 @@ const StyledButton = styled(MButton)(({ theme }) => ({
   color: theme.palette.common,
   borderRadius: 15,
   fontSize: 16,
+  width: '220px',
+  marginBottom: '20px',
   '&:before' : {
     backgroundColor: theme.palette,
     color: '#1B4242',

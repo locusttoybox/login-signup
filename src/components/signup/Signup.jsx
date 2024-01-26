@@ -20,7 +20,6 @@
           <Input placeholder="Email" size="medium" icon={emailIcon} />
           <Input placeholder="Password" size="medium" icon={passwordIcon} />
         </div>
-
       </div>
     )
   }

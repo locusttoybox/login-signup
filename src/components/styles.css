@@ -1,69 +1,7 @@
-
-
-
 .header {
     display: flex;
     flex-direction: column;
-    gap: 9px;
+    gap: 11px;
     width: 100%;
-    margin-top: 40px;
-}
-
-.text {
-    font-family: 'Montserrat';
-    font-weight: 200;
-    color: #092635;
-    font-size: 32px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.icons {
-    height: 20px;
-    width: 20px;
-}
-
-
-.input {
-    display: flex;
-    align-items: center;
-    margin: auto;
-    width: 100%;
-    max-width: 500px;
-    height: 80px;
-    background-color: #FFEFE8;
-    border-radius: 6px;
-    font-family: 'Roboto';
-    margin-left: 10px;
-}
-
-.input input {
-    flex: 1;
-    height: 50px;
-    width: 500px;
-    background: transparent;
-    border: none;
-    outline: none;
-    color: #092635;
-    font-size: 19px;
-}
-
-
-.forgot-password span {
-    color: #092635;
-    cursor: pointer;
-}
-
-.submit-container {
-    display: flex;
-    gap: 30px;
-    margin: 60px auto;
-    align-items: center;
-}
-
-.flex-row {
-    flex-direction: row;
-    flex: 1;
 }
 
