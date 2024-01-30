@@ -3,7 +3,7 @@ import './App.css';
 import Container from './screens/Container';
 import Login from './components/login/Login';
 import Signup from './components/signup/Signup';
-import Dashboard from './screens/dashboard';
+import Dashboard from './screens/Dashboard';
 
 import { ThemeProvider, createTheme } from '@mui/material';
 
@@ -56,13 +56,15 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
     <div>
-      <Container>
+
+      <Dashboard />
+      {/* <Container>
         {action === 'Login' ? (
           <Login onActionChange={handleActionChange} action={action} />
         ) : (
           <Signup onActionChange={handleActionChange} action={action} />
         )}
-     </Container>
+     </Container> */}
     </div>
     </ThemeProvider>
   );

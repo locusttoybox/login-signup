@@ -1,10 +1,11 @@
 import React from 'react';
 import { Grid } from '@mui/material';
 
-const Dashboard = ({ onSubmit }) => {
+const Dashboard = () => {
     return (
-        <Grid item sx={12} md={3} style={{ backgroundColor: '#1B4242' }}>
-            
+        
+        <Grid className='dashboard' style={{ backgroundColor: "red" }}>
+            <h1>Dashboard</h1>
         </Grid>
     );
 };

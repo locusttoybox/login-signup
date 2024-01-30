@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Grid } from '@mui/material';
-import '../../components/styles.css';
 
 import userIcon from '../../assets/user.png';
 import passwordIcon from '../../assets/padlock.png';
@@ -16,8 +15,6 @@ const Login = ({ onSubmit }) => {
 
   return (
     <div className="container">
-      <div className="header">
-      </div>
       <div className="inputs">
         <Input placeholder="Username" size="medium" icon={userIcon} />
         <Input placeholder="Password" size="medium" icon={passwordIcon} />

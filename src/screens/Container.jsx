@@ -6,7 +6,6 @@ import Signup from '../components/signup/Signup';
 
 import Title from '../components/typography';
 import Button from '../components/button';
-import Dashboard from './dashboard';
 
 const customContainer = () => {
   const [active, setActive] = useState('login');
@@ -25,14 +24,14 @@ const customContainer = () => {
   return (
     <Container className="row">
       <Grid container>
-        <Grid item xs={12} md={7} className="column-1">
+        <Grid item xs={12} md={6} className="column-1">
           <div className="welcome">
             <Title text="Welcome to your name day app" size="h1" />
           </div>
         </Grid>
-        <Grid item xs={12} md={5} className="column-2">
-           <div>
-            <div className='styled'>
+        <Grid item xs={12} md={6} className="column-2">
+           <div className='tabs'>
+            <div className='tabs-menu'>
             <Button text="Login" onClick={() => setActive('login')} /> 
             <Button text="Signup" onClick={() => setActive('signup')} />
             </div>
@@ -46,7 +45,6 @@ const customContainer = () => {
           </div>
         </Grid>
       </Grid>
-     {loggedIn && <Dashboard />}
     </Container>
   );
 };

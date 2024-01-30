@@ -1,6 +1,5 @@
   import React from 'react';
   import { TextField, Typography, Grid } from '@mui/material';
-  import '../../components/styles.css';
 
 
   import userIcon from '../../assets/user.png';
