@@ -6,9 +6,13 @@ import Signup from '../components/signup/Signup';
 
 import Title from '../components/typography';
 import Button from '../components/button';
+import Dashboard from './dashboard';
 
 const customContainer = () => {
   const [active, setActive] = useState('login');
+  const [loggedIn, setLoggedIn] = useState(false);
+
+  console.log(loggedIn);
 
   const onSubmit = (data) => {
     if (active === 'login') {
@@ -42,12 +46,7 @@ const customContainer = () => {
           </div>
         </Grid>
       </Grid>
-      <Grid item xs={12} md={2} className='menu'>
-          <div className="menu-bar">
-            
-          </div>
-
-      </Grid>
+     {loggedIn && <Dashboard />}
     </Container>
   );
 };

@@ -3,6 +3,7 @@ import './App.css';
 import Container from './screens/Container';
 import Login from './components/login/Login';
 import Signup from './components/signup/Signup';
+import Dashboard from './screens/dashboard';
 
 import { ThemeProvider, createTheme } from '@mui/material';
 

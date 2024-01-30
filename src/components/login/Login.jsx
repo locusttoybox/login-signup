@@ -9,6 +9,7 @@ import Link from '../../components/link';
 import Checkbox from '../../components/checkbox';
 import Text from '../../components/text';
 import Input from '../../components/input';
+import Button from '../../components/button';
 
 const Login = ({ onSubmit }) => {
   const [rememberMe, setRememberMe] = useState();
@@ -42,6 +43,10 @@ const Login = ({ onSubmit }) => {
         <Grid item xs={12} style={{ textAlign: 'center', marginTop: '24px' }}>
               <Link text="Don't have an account?"></Link>
         </Grid>
+        <div style={{ textAlign: 'center', marginTop: '20px' }}>
+          <Button text='Submit'/> 
+        </div>
+
       </div>
     </div>
   );
