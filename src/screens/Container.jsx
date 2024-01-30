@@ -42,6 +42,12 @@ const customContainer = () => {
           </div>
         </Grid>
       </Grid>
+      <Grid item xs={12} md={2} className='menu'>
+          <div className="menu-bar">
+            
+          </div>
+
+      </Grid>
     </Container>
   );
 };
