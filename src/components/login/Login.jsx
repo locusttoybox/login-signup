@@ -1,11 +1,10 @@
-import React, {useState} from 'react';
-import {Typography, Grid} from '@mui/material';
+import React, { useState } from 'react';
+import { Grid } from '@mui/material';
 import '../../components/styles.css';
 
 import userIcon from '../../assets/user.png';
 import passwordIcon from '../../assets/padlock.png';
 
-import Button from '../../components/button';
 import Link from '../../components/link';
 import Checkbox from '../../components/checkbox';
 import Text from '../../components/text';
