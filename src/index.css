@@ -20,3 +20,8 @@ code {
 .title {
   margin-bottom: 16px;
 }
+
+.nav-button {
+  display: flex;
+  justify-content: center;
+}

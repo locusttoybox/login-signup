@@ -12,10 +12,14 @@ const Landing = () => {
 
     return (
         <Container>
-            <AppBar possition='fixed'>
+            <AppBar position='fixed' style={{ background: 'transparent', boxShadow: 'none' }}>
                 <Toolbar>
                     <Navbar>
-                        <Button text='About' color='primary'/>
+                        <div className="nav-button">
+                            <Button text='About' />
+                            <Button text='Contact'/>
+                            <Button text='Login'/>
+                        </div>
                     </Navbar>
                 </Toolbar>
             </AppBar>
