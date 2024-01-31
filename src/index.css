@@ -31,3 +31,9 @@ code {
   display: flex;
   gap: 30px;
 }
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}

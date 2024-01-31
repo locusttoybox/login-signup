@@ -40,6 +40,9 @@ const Login = ({ onSubmit }) => {
             <Link text="Forgot password"></Link>
           </Grid>
         </Grid>
+          <div className='button-container'>
+            <Button text="Login" onClick={() => setActive('login')} /> 
+          </div>
       </div>
     </div>
   );
