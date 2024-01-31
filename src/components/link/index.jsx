@@ -1,18 +1,18 @@
 import { styled } from '@mui/material';
 import { Link as MLink } from '@mui/material'
 
-const StyledLink = styled(MLink) (({ theme }) => ({
+const StyledLink = styled(MLink) (({ theme, large }) => ({
         color: theme.palette.secondary.main,
         color: '#092635',
         textDecoration: 'none',
-        fontSize: 16,
+        fontSize:  large ? 36: 16,
         fontFamily: 'Roboto',
         
 }))
 
-const Link = ({ text }) => {
+const Link = ({ text, large }) => {
         return (
-        <StyledLink href='#'>
+        <StyledLink href='#' large={large}>
          {text}
         </StyledLink>
         )               

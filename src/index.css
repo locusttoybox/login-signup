@@ -37,3 +37,9 @@ code {
   justify-content: center;
   margin-top: 24px;
 }
+
+.menu-links {
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;;
+}

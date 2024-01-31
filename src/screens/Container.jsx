@@ -28,10 +28,10 @@ const customContainer = () => {
         </Grid> */}
         <Grid item xs={12} md={12} className="column-2">
            <div>
-            <div className='styled'>
-            {/* <Button text="Login" onClick={() => setActive('login')} /> 
-            <Button text="Signup" onClick={() => setActive('signup')} /> */}
-            </div>
+            {/* <div className='styled'>
+            <Button text="Login" onClick={() => setActive('login')} /> 
+            <Button text="Signup" onClick={() => setActive('signup')} />
+            </div> */}
           <div className="login-signup">
             {active === 'login' ? (
               <Login onSubmit={onSubmit} />
