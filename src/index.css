@@ -21,7 +21,7 @@ code {
   margin-bottom: 16px;
 }
 
-.nav-button {
+.nav-links {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }

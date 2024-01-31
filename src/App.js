@@ -26,7 +26,7 @@ const theme = createTheme({
       marginRight: 75,
       fontFamily: 'DM Sans',
       marginBottom: '32px',
-      fontWeight: 500,
+      fontWeight: 600,
       letterSpacing: 2,
     },
 

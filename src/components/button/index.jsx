@@ -15,12 +15,8 @@ const StyledButton = styled(MButton)(({ theme, color }) => ({
   },
 }));
 
-export const NavbarButton = styled(StyledButton)({
-    backgroundColor: 'transparet',
-    fontSize: 70,
-})
 
-const Button = ({ text, onClick, color, size }) => {
+const Button = ({ text, onClick, color }) => {
   return (
     <StyledButton
       variant="contained"

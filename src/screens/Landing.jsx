@@ -4,6 +4,7 @@ import '../index.css';
 
 import Title from '../components/typography';
 import Button from '../components/button';
+import Link from '../components/link';
 import Navbar from '../components/navbar';
 
 
@@ -16,9 +17,9 @@ const Landing = () => {
                 <Toolbar>
                     <Navbar>
                         <div className="nav-button">
-                            <Button text='About' />
-                            <Button text='Contact'/>
-                            <Button text='Login'/>
+                            <Link text='About'/>
+                            <Link text='About'/>
+                            <Link text='About'/>
                         </div>
                     </Navbar>
                 </Toolbar>
