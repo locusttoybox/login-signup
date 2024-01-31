@@ -17,6 +17,7 @@ const Login = ({ onSubmit }) => {
   return (
     <div className="container">
       <div className="header">
+        <Link text='Login'/>
       </div>
       <div className="inputs">
         <Input placeholder="Username" size="medium" icon={userIcon} />
