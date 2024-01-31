@@ -40,9 +40,6 @@ const Login = ({ onSubmit }) => {
             <Link text="Forgot password"></Link>
           </Grid>
         </Grid>
-        <Grid item xs={12} style={{ textAlign: 'center', marginTop: '24px' }}>
-              <Link text="Don't have an account?"></Link>
-        </Grid>
       </div>
     </div>
   );

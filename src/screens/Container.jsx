@@ -21,12 +21,12 @@ const customContainer = () => {
   return (
     <Container className="row">
       <Grid container>
-        <Grid item xs={12} md={7} className="column-1">
+        {/* <Grid item xs={12} md={7} className="column-1">
           <div className="welcome">
             <Title text="Welcome to your name day app" size="h1" />
           </div>
-        </Grid>
-        <Grid item xs={12} md={5} className="column-2">
+        </Grid> */}
+        <Grid item xs={12} md={12} className="column-2">
            <div>
             <div className='styled'>
             <Button text="Login" onClick={() => setActive('login')} /> 

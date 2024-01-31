@@ -15,11 +15,14 @@
 
     return (
       <div className='container'>
+        <Grid item sx={12} md={12}>
         <div className='inputs'>
           <Input placeholder="Username" size="medium" icon={userIcon} />
           <Input placeholder="Email" size="medium" icon={emailIcon} />
           <Input placeholder="Password" size="medium" icon={passwordIcon} />
         </div>
+        </Grid>
+
       </div>
     )
   }
