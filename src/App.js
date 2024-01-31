@@ -23,10 +23,12 @@ const theme = createTheme({
   },
   typography: {
     h1 : {
-      fontSize: 76,
+      fontSize: 88,
       marginRight: 75,
-      fontFamily: 'Montserrat',
+      fontFamily: 'DM Sans',
+      fontWeight: '500',
       marginBottom: '32px',
+      letterSpacing: 2,
     },
 
     h2 : {

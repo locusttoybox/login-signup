@@ -3,6 +3,7 @@ import { Container, Grid, AppBar, Toolbar } from '@mui/material';
 import '../index.css';
 
 import Title from '../components/typography';
+import Button from '../components/button';
 
 
 const Landing = () => {
@@ -15,12 +16,10 @@ const Landing = () => {
                         <Title text='Welcome to your namday app' size='h1' />   
                     </div>
                     <div className='subtitle'>
-                    <Title text='Short discription about app and features' size='h3' />
+                        <Title text='Short discription about app and features' size='h3' />
+                    </div>
                 </div>
-                </div>
-
-
-
+                <Button text='Enter' style={{ marginTop: '20px' }}/>
                 </Grid>
             </Grid>
         </Container>
