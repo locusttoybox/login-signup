@@ -18,7 +18,7 @@ const StyledButton = styled(MButton)(({ theme, color }) => ({
   },
 }));
 
-const Button = ({ text, onClick }) => {
+const Button = ({ text, onClick, color }) => {
   return (
     <StyledButton
       variant="contained"

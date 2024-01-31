@@ -3,6 +3,7 @@ import './App.css';
 import Container from './screens/Container';
 import Login from './components/login/Login';
 import Signup from './components/signup/Signup';
+import Landing from './screens/Landing';
 
 import { ThemeProvider, createTheme } from '@mui/material';
 
@@ -21,18 +22,25 @@ const theme = createTheme({
   },
   typography: {
     h1 : {
-      fontSize: 96,
+      fontSize: 80,
       marginRight: 75,
-      fontFamily: 'Montserrat',
+      fontFamily: 'DM Sans',
       marginBottom: '32px',
+      fontWeight: 500,
+      letterSpacing: 2,
     },
 
     h2 : {
       fontSize: 32,
       color: '#F5EEE6',
-      fontFamily: 'Roboto',
+      
       fontWeight: 'bold',
       letterSpacing: 1,
+    },
+
+    h3 : {
+      fontSize: 24,
+      fontFamily: 'DM Sans',
     },
 
     h4 : {
@@ -54,7 +62,8 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-    <div>
+      <Landing />
+    {/* <div>
       <Container>
         {action === 'Login' ? (
           <Login onActionChange={handleActionChange} action={action} />
@@ -62,7 +71,7 @@ function App() {
           <Signup onActionChange={handleActionChange} action={action} />
         )}
      </Container>
-    </div>
+    </div> */}
     </ThemeProvider>
   );
 }

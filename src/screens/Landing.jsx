@@ -15,9 +15,7 @@ const Landing = () => {
             <AppBar possition='fixed'>
                 <Toolbar>
                     <Navbar>
-                        <Button color='inherit' size='h4'>About</Button>
-                        <Button color='inherit' size='h4'>About</Button>
-                        <Button color='inherit' size='h4'>About</Button>
+                        <Button text='About' color='primary'/>
                     </Navbar>
                 </Toolbar>
             </AppBar>

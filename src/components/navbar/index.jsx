@@ -9,10 +9,10 @@ const StyledToolbar = styled(MToolbar)(({ theme} ) => ({
 }),
 );
 
-const Navbar = ({ text, size }) => {
+const Navbar = ({ children, size }) => {
     return (
-        <StyledToolbar variant={size}>
-            {text}
+        <StyledToolbar variant={size} >
+            { children }
         </StyledToolbar>
     )
 };
