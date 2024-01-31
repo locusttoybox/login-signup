@@ -16,15 +16,10 @@ const Login = ({ onSubmit }) => {
 
   return (
     <div className="container">
-      {/* <div className="login-link">
-        <Link text='Login'/>
-      </div>
-      <div className='signup-link'>
-        <Link text='Signup'/>
-      </div> */}
+
       <Grid className='menu-links' item sx={6}>
         <Link text='Login' large={true}/>
-        <Link text='Signup'/>
+        <Link text='Signup' large={true}/>
       </Grid> 
       <div className="inputs">
         <Input placeholder="Username" size="medium" icon={userIcon} />

@@ -5,9 +5,8 @@ const StyledLink = styled(MLink) (({ theme, large }) => ({
         color: theme.palette.secondary.main,
         color: '#092635',
         textDecoration: 'none',
-        fontSize:  large ? 36: 16,
-        fontFamily: 'Roboto',
-        
+        fontSize:  large ? 24: 16,
+        fontFamily: 'Roboto',        
 }))
 
 const Link = ({ text, large }) => {
