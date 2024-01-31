@@ -16,8 +16,9 @@ const theme = createTheme({
     },
     secondary: {
       main: '#1B4242',
+      light: 'transparent',
     },
-    common :{
+    common: {
       main: '#9EC8B9',
     }
   },

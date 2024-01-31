@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Grid, AppBar, Toolbar } from '@mui/material';
+import { Container, Toolbar, AppBar, Grid } from '@mui/material';
 import '../index.css';
 
 import Title from '../components/typography';
@@ -8,13 +8,20 @@ import Navbar from '../components/navbar';
 
 
 const Landing = () => {
-    const navTitle = <Title text='Welcome' size='h4'/>
+
 
     return (
         <Container>
-             <AppBar position='static'>
-                <Navbar title={navTitle}/>
-             </AppBar>
+            <AppBar possition='fixed'>
+                <Toolbar>
+                    <Navbar>
+                        <Button color='inherit' size='h4'>About</Button>
+                        <Button color='inherit' size='h4'>About</Button>
+                        <Button color='inherit' size='h4'>About</Button>
+                    </Navbar>
+                </Toolbar>
+            </AppBar>
+
             <Grid container alignItems='center' height='100vh'>
                 <Grid item sx={12} md={8}>
                  <div className="container">

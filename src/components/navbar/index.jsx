@@ -2,7 +2,10 @@ import { styled } from '@mui/material';
 import { Toolbar as MToolbar } from '@mui/material';
 
 const StyledToolbar = styled(MToolbar)(({ theme} ) => ({
-    color: theme.palette.secondary.main,
+    backgroundColor: 'transparent',
+    '& *': {
+        color: '#fff', 
+      },
 }),
 );
 
