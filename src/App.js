@@ -15,7 +15,7 @@ const theme = createTheme({
       main: '#092635',
     },
     secondary: {
-      main: '#F5EEE6',
+      main: '#1B4242',
     },
     common :{
       main: '#9EC8B9',
@@ -23,7 +23,7 @@ const theme = createTheme({
   },
   typography: {
     h1 : {
-      fontSize: 96,
+      fontSize: 76,
       marginRight: 75,
       fontFamily: 'Montserrat',
       marginBottom: '32px',
@@ -35,6 +35,11 @@ const theme = createTheme({
       fontFamily: 'Roboto',
       fontWeight: 'bold',
       letterSpacing: 1,
+    },
+
+    h3 : {
+      fontSize: 24,
+      fontFamily: 'Roboto',
     },
 
     h4 : {
