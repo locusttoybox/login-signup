@@ -21,7 +21,13 @@ code {
   margin-bottom: 16px;
 }
 
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .nav-links {
   display: flex;
-  justify-content: space-between;
+  gap: 30px;
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Toolbar, AppBar, Grid } from '@mui/material';
+import { Container, Toolbar, AppBar, Grid, Box } from '@mui/material';
 import '../index.css';
 
 import Title from '../components/typography';
@@ -14,12 +14,12 @@ const Landing = () => {
     return (
         <Container>
             <AppBar position='fixed' style={{ background: 'transparent', boxShadow: 'none' }}>
-                <Toolbar>
+                <Toolbar className='menu'>
                     <Navbar>
-                        <div className="nav-button">
+                        <div className="nav-links">
                             <Link text='About'/>
-                            <Link text='About'/>
-                            <Link text='About'/>
+                            <Link text='Contact'/>
+                            <Link text='Something'/>
                         </div>
                     </Navbar>
                 </Toolbar>
@@ -29,7 +29,7 @@ const Landing = () => {
                 <Grid item sx={12} md={8}>
                  <div className="container">
                     <div className="title">
-                        <Title text='Welcome to your namday app' size='h1' />   
+                        <Title text='Welcome to your nameday app' size='h1' />   
                     </div>
                     <div className='subtitle'>
                         <Title text='Short discription about app and features' size='h3' />
