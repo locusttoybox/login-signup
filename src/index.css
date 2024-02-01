@@ -36,7 +36,7 @@ code {
 .button-container {
   display: flex;
   justify-content: center;
-  margin-top: 36px;
+  margin-top: 24px;
 }
 
 .menu-links {
@@ -77,5 +77,5 @@ code {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 24px;
+  margin-top: 16px;
 }

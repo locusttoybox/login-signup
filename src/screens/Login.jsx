@@ -40,16 +40,16 @@ const Login = ({ onSubmit }) => {
             />
             <Text text="Remember me" />
           </Grid>
-          <Grid item xs={6} size='' style={{ textAlign: 'right' }}>
+          <Grid item xs={6} style={{ textAlign: 'right' }}>
             <Link text="Forgot password"></Link>
           </Grid>
-          <div className='create-link'>
-            <Link text='Create account'/>
-          </div>
         </Grid>
           <div className='button-container'>
             <Button text="Login" onClick={() => setActive('login')} /> 
           </div>
+          <Grid item xs={12} className='create-link' size='h2'>
+              <Link text='Create account'/>
+          </Grid>
       </div>
     </div>
   );
