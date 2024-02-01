@@ -10,12 +10,13 @@ const StyledTypography = styled(MTypography)(({ theme }) => ({
     },
   }));
 
-  const Text = ({ text }) => {
+  const Text = ({ text, size }) => {
 
 
     return (
     <StyledTypography>
         {text}
+        {size}
      </StyledTypography>
     )
   };

@@ -30,7 +30,7 @@ const Landing = () => {
 
             <Grid container alignItems='center' height='100vh'>
                 <Grid item sx={12} md={8}>
-                 <div className="container">
+                 <div className="container-landing">
                     <div className="title">
                         <Title text='Welcome to your nameday app' size='h1' />   
                     </div>

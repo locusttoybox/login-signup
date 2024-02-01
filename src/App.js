@@ -62,9 +62,9 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      {/* <Login /> */}
-      <Signup />
-      {/* <Landing /> */}
+      {/* <Login />
+      <Signup /> */}
+      <Landing />
     {/* <div>
       <Container>
         {action === 'Login' ? (
