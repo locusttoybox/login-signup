@@ -37,8 +37,9 @@ const Landing = () => {
                     <div className='subtitle'>
                         <Title text='Short discription about app and features' size='h3' />
                     </div>
+                    <Button text='Enter' />
                 </div>
-                <Button text='Enter' />
+
                 </Grid>
             </Grid>
         </Container>
