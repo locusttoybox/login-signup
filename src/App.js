@@ -62,8 +62,8 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      {/* <Landing /> */}
-    <div>
+      <Landing />
+    {/* <div>
       <Container>
         {action === 'Login' ? (
           <Login onActionChange={handleActionChange} action={action} />
@@ -71,7 +71,7 @@ function App() {
           <Signup onActionChange={handleActionChange} action={action} />
         )}
      </Container>
-    </div>
+    </div> */}
     </ThemeProvider>
   );
 }

@@ -29,7 +29,8 @@ code {
 
 .nav-links {
   display: flex;
-  gap: 30px;
+  gap: 60px;
+  color: black;
 }
 
 .button-container {
