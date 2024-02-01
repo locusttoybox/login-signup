@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Container, Grid } from '@mui/material';
 import './Container.css';
-import Login from '../components/login/Login';
-import Signup from '../components/signup/Signup';
+import Login from '../screens/Login';
+import Signup from '../screens/Signup';
 
 import Title from '../components/typography';
 import Button from '../components/button';

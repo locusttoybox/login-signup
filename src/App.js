@@ -1,8 +1,8 @@
 import React, { useState } from 'react'; 
 import './App.css';
 import Container from './screens/Container';
-import Login from './components/login/Login';
-import Signup from './components/signup/Signup';
+import Login from './screens/Login';
+import Signup from './screens/Signup';
 import Landing from './screens/Landing';
 
 import { ThemeProvider, createTheme } from '@mui/material';
@@ -62,7 +62,9 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <Landing />
+      {/* <Login /> */}
+      <Signup />
+      {/* <Landing /> */}
     {/* <div>
       <Container>
         {action === 'Login' ? (
