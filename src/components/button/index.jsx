@@ -16,16 +16,16 @@ const StyledButton = styled(MButton)(({ theme, color }) => ({
 }));
 
 
-const ActionButton = styled(MButton)(({ theme, customColor }) => ({
+const ActionButton = styled(MButton)(({ theme, customStyle }) => ({
   backgroundColor: theme.palette.common.main,
-  color: theme.palette.comon,
+  color: customStyle ? theme.palette.common.main : theme.palette.common[color],
   borderRadius: 10,
-  fontSize: 25,
+  fontSize: 40,
   width: '180px',
 }));
 
-const Button = ({ text, onClick, color }) => {
-  const styledComponent = customStyle ? ActionButton : StyledButton;
+const Button = ({ text, onClick, color, customStyle }) => {
+  const StyledComponent = customStyle ? ActionButton : StyledButton;
 
   return (
     <StyledButton
