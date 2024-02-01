@@ -10,6 +10,7 @@ import Link from '../components/link';
 import Checkbox from '../components/checkbox';
 import Text from '../components/text';
 import Input from '../components/input';
+import Title from '../components/typography';
 
 const Login = ({ onSubmit }) => {
   const [rememberMe, setRememberMe] = useState();
@@ -17,8 +18,9 @@ const Login = ({ onSubmit }) => {
   return (
     <div className="container">
       <Grid className='menu-links' item sx={6}>
-        <Link text='Login' large={true}/>
-        <Link text='Signup' large={true}/>
+      <div className='accout-text'>
+          <Title text='Login' size='h2'/>
+      </div>
       </Grid> 
       <div className="inputs">
         <Input placeholder="Username" size="medium" icon={userIcon} />

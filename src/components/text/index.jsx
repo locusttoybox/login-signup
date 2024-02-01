@@ -2,21 +2,22 @@ import { styled } from '@mui/material';
 import { Typography as MTypography } from '@mui/material';
 
 
-const StyledTypography = styled(MTypography)(({ theme }) => ({
+const StyledTypography = styled(MTypography)(({ theme, fontSize }) => ({
     color: theme.palette.secondary.main,
   
     '&.Mui-checked': {
       color: theme.palette.secondary.main,
+      fontSize: fontSize,
     },
   }));
 
-  const Text = ({ text, size }) => {
+  const Text = ({ text, fontSize }) => {
 
 
     return (
     <StyledTypography>
         {text}
-        {size}
+        {fontSize}
      </StyledTypography>
     )
   };

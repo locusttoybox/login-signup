@@ -32,8 +32,8 @@ const theme = createTheme({
     h2 : {
       fontSize: 32,
       color: '#F5EEE6',
-      
-      fontWeight: 'bold',
+      fontFamily: 'DM Sans',
+      fontWeight: 400,
       letterSpacing: 1,
     },
 
@@ -61,9 +61,9 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      {/* <Login />
-      <Signup /> */}
-      <Landing />
+      <Login />
+      {/* <Signup />  */}
+      {/* <Landing /> */}
     {/* <div>
       <Container>
         {action === 'Login' ? (

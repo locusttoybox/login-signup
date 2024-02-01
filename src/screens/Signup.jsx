@@ -17,7 +17,9 @@
     return (
       <div className='container'>
         <div>
-          <Title text='Create Account' size='h3'/>
+          <div className='accout-text'>
+          <Title text='Create Account' size='h2'/>
+          </div>
         </div>
         <div className='inputs'>
           <Input placeholder="Username" size="medium" icon={userIcon} />
