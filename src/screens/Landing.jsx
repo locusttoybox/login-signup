@@ -39,7 +39,6 @@ const Landing = () => {
                     </div>
                     <Button text='Enter' />
                 </div>
-
                 </Grid>
             </Grid>
         </Container>

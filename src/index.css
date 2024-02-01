@@ -72,3 +72,10 @@ code {
 .accout-text {
   padding-bottom: 4px;
 }
+
+.create-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+}
