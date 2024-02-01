@@ -20,6 +20,9 @@ const Landing = () => {
                             <Link text='About'/>
                             <Link text='Contact'/>
                             <Link text='Something'/>
+                        <div>
+                            <Button text='Login'/>
+                        </div>
                         </div>
                     </Navbar>
                 </Toolbar>

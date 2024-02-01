@@ -16,7 +16,17 @@ const StyledButton = styled(MButton)(({ theme, color }) => ({
 }));
 
 
+const ActionButton = styled(MButton)(({ theme, customColor }) => ({
+  backgroundColor: theme.palette.common.main,
+  color: theme.palette.comon,
+  borderRadius: 10,
+  fontSize: 25,
+  width: '180px',
+}));
+
 const Button = ({ text, onClick, color }) => {
+  const styledComponent = customStyle ? ActionButton : StyledButton;
+
   return (
     <StyledButton
       variant="contained"
