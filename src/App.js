@@ -61,8 +61,8 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <Login />
-      {/* <Signup />  */}
+      {/* <Login /> */}
+      <Signup /> 
       {/* <Landing /> */}
     {/* <div>
       <Container>
