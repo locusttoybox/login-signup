@@ -14,18 +14,32 @@ const Landing = () => {
     return (
         <Container>
             <AppBar position='fixed' style={{ background: 'transparent', boxShadow: 'none' }}>
-                <Toolbar className='menu'>
+                <Toolbar className='wrapper'>
                     <Navbar>
+                        <div className='nav-links'>
+                            <Link text='About'/>
+                            <Link text='Contact'/>
+                            <Link text='Something'/>
+                        </div>
+                        <div className='login-landing'>
+                            <Button  text='Login' small bgColor='light' />
+                        </div>
+                    </Navbar>
+                </Toolbar>
+                {/* <Toolbar className='wrapper'>
+                    <Navbar>
+                        <div className='menu'>
                         <div className="nav-links">
                             <Link text='About'/>
                             <Link text='Contact'/>
                             <Link text='Something'/>
-                        <div>
-                            <Button text='Login' small textColor='dark' />
+                        <div className='login-landing'>
+                            <Button  text='Login' small bgColor='light' />
+                        </div>
                         </div>
                         </div>
                     </Navbar>
-                </Toolbar>
+                </Toolbar> */}
             </AppBar>
 
             <Grid container alignItems='center' height='100vh'>

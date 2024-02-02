@@ -21,16 +21,25 @@ code {
   margin-bottom: 16px;
 }
 
-.menu {
+/* .menu {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
+
+/* .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} */
 
 .nav-links {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   gap: 60px;
   color: black;
+  flex-grow: 1;
 }
 
 .button-container {
@@ -39,12 +48,12 @@ code {
   margin-top: 24px;
 }
 
-.menu-links {
+/* .menu-links {
   display: flex;
   justify-content: center;
   gap: 90px;
   width: 100%;
-}
+} */
 
 .container {
   display: flex;
