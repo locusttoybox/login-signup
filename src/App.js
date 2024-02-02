@@ -18,6 +18,8 @@ const theme = createTheme({
     },
     common :{
       main: '#9EC8B9',
+      light: '#F3D7CA',
+      dark: 'black'
     }
   },
   typography: {
@@ -61,18 +63,11 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
+      <Landing /> 
       {/* <Login /> */}
-      <Signup /> 
-      {/* <Landing /> */}
-    {/* <div>
-      <Container>
-        {action === 'Login' ? (
-          <Login onActionChange={handleActionChange} action={action} />
-        ) : (
-          <Signup onActionChange={handleActionChange} action={action} />
-        )}
-     </Container>
-    </div> */}
+      {/* <Signup />  */}
+
+      
     </ThemeProvider>
   );
 }

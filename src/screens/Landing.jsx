@@ -21,7 +21,7 @@ const Landing = () => {
                             <Link text='Contact'/>
                             <Link text='Something'/>
                         <div>
-                            <Button text='Login' customStyle/>
+                            <Button text='Login' small textColor='dark' />
                         </div>
                         </div>
                     </Navbar>
