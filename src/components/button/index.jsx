@@ -8,7 +8,7 @@ const StyledButton = styled(MButton)(({ theme, textColor, bgColor, small }) => (
   fontSize: small ? 14 : 16,
   width: small ? '90px' : '220px',
   marginBottom: '20px',
-  // backgroundColor: '#1B4242',
+  backgroundColor: '#1B4242',
   '&:hover': {
     backgroundColor: theme.palette[textColor],
     backgroundColor: '#1B4242',

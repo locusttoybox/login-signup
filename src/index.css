@@ -21,38 +21,30 @@ code {
   margin-bottom: 16px;
 }
 
-/* .menu {
+.wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-} */
-
-/* .wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-} */
+  padding: 0 20px;
+}
 
 .nav-links {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   gap: 60px;
   color: black;
-  flex-grow: 1;
 }
 
-.button-container {
+.login-landing {
+  right: inherit;
+  margin-right: auto;
+  position: absolute;
+}
+
+/* .button-container {
   display: flex;
   justify-content: center;
   margin-top: 24px;
-}
-
-/* .menu-links {
-  display: flex;
-  justify-content: center;
-  gap: 90px;
-  width: 100%;
 } */
 
 .container {
@@ -76,6 +68,7 @@ code {
   align-items: center;
   width: 100%;
   max-width: 400px;
+  margin-bottom: 24px;
 }
 
 .accout-text {

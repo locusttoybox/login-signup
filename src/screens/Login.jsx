@@ -31,7 +31,7 @@ const Login = ({ onSubmit }) => {
           justifyContent="space-between"
           style={{marginTop: '12px'}}
         >
-          <Grid item container alignItems="center" xs={6}>
+          <Grid item container alignItems="center" xs={6} style={{ marginBottom: '24px' }}>
             <Checkbox
               checked={rememberMe}
               onChange={() => {
@@ -40,7 +40,7 @@ const Login = ({ onSubmit }) => {
             />
             <Text text="Remember me" />
           </Grid>
-          <Grid item xs={6} style={{ textAlign: 'right' }}>
+          <Grid item xs={6} style={{ textAlign: 'right', marginBottom: '24px' }}>
             <Link text="Forgot password"></Link>
           </Grid>
         </Grid>

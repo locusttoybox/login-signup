@@ -11,7 +11,7 @@ import { ThemeProvider, createTheme } from '@mui/material';
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#092635',
+      main: '#5C8374',
     },
     secondary: {
       main: '#1B4242',
@@ -29,6 +29,7 @@ const theme = createTheme({
       fontFamily: 'DM Sans',
       fontWeight: 600,
       letterSpacing: 2,
+      color: '#1B4242'
     },
 
     h2 : {
@@ -63,8 +64,8 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <Landing /> 
-      {/* <Login /> */}
+      {/* <Landing />  */}
+      <Login />
       {/* <Signup />  */}
 
       

@@ -21,28 +21,14 @@ const Landing = () => {
                             <Link text='Contact'/>
                             <Link text='Something'/>
                         </div>
-                        <div className='login-landing'>
-                            <Button  text='Login' small bgColor='light' />
-                        </div>
                     </Navbar>
                 </Toolbar>
-                {/* <Toolbar className='wrapper'>
-                    <Navbar>
-                        <div className='menu'>
-                        <div className="nav-links">
-                            <Link text='About'/>
-                            <Link text='Contact'/>
-                            <Link text='Something'/>
-                        <div className='login-landing'>
-                            <Button  text='Login' small bgColor='light' />
-                        </div>
-                        </div>
-                        </div>
-                    </Navbar>
-                </Toolbar> */}
+                
             </AppBar>
-
             <Grid container alignItems='center' height='100vh'>
+            <div className='login-landing'>
+                     <Button  text='Login' small bgColor='light' />
+                </div>
                 <Grid item sx={12} md={8}>
                  <div className="container-landing">
                     <div className="title">
