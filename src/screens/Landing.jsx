@@ -5,7 +5,7 @@ import '../index.css';
 import Title from '../components/typography';
 import Button from '../components/button';
 import Link from '../components/link';
-import Navbar from '../components/navbar';
+// import Navbar from '../components/navbar';
 
 
 const Landing = () => {
@@ -14,21 +14,21 @@ const Landing = () => {
     return (
         <Container>
             <AppBar position='fixed' style={{ background: 'transparent', boxShadow: 'none' }}>
+
                 <Toolbar className='wrapper'>
-                    <Navbar>
+                    <Box sx={{ flexGrow: 1, display: 'flex', justifyContent: 'center' }}>
                         <div className='nav-links'>
                             <Link text='About'/>
                             <Link text='Contact'/>
                             <Link text='Something'/>
                         </div>
-                    </Navbar>
+                    </Box>
+                    <Box className='login-landing'>
+                        <Button  text='Login' small bgColor='light' />
+                    </Box>
                 </Toolbar>
-                
             </AppBar>
             <Grid container alignItems='center' height='100vh'>
-            <div className='login-landing'>
-                     <Button  text='Login' small bgColor='light' />
-                </div>
                 <Grid item sx={12} md={8}>
                  <div className="container-landing">
                     <div className="title">
@@ -37,7 +37,7 @@ const Landing = () => {
                     <div className='subtitle'>
                         <Title text='Short discription about app and features' size='h3' />
                     </div>
-                    <Button text='Enter' />
+                    <Button text='Explore' />
                 </div>
                 </Grid>
             </Grid>
