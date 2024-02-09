@@ -24,7 +24,7 @@ const Landing = () => {
                         </div>
                     </Box>
                     <Box className='login-landing'>
-                        <Button  text='Login' small bgColor='light' />
+                        <Button href='login' text='Login' small bgColor='light' />
                     </Box>
                 </Toolbar>
             </AppBar>

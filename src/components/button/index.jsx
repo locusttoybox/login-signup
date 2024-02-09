@@ -1,6 +1,7 @@
 import { styled } from '@mui/system';
 import { Button as MButton } from '@mui/material';
 
+
 const StyledButton = styled(MButton)(({ theme, textColor, bgColor, small }) => ({
   backgroundColor: theme.palette.common[bgColor],
   color: theme.palette.common[textColor],
@@ -15,7 +16,7 @@ const StyledButton = styled(MButton)(({ theme, textColor, bgColor, small }) => (
   },
 }));
 
-const Button = ({ text, onClick, textColor, bgColor, small }) => {
+const Button = ({ text, onClick, textColor, bgColor, small, href }) => {
 
   return (
     <StyledButton
@@ -24,6 +25,7 @@ const Button = ({ text, onClick, textColor, bgColor, small }) => {
       textColor={textColor}
       bgColor={bgColor}
       small={small}
+      href={href}
     >
       {text}
     </StyledButton>

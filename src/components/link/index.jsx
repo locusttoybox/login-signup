@@ -8,9 +8,9 @@ const StyledLink = styled(MLink) (({ theme, large }) => ({
         fontFamily: 'Roboto',        
 }))
 
-const Link = ({ text, large }) => {
+const Link = ({ text, large, href }) => {
         return (
-        <StyledLink href='#' large={large}>
+        <StyledLink href={href} large={large}>
          {text}
         </StyledLink>
         )               

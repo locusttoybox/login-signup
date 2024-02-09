@@ -48,7 +48,7 @@ const Login = ({ onSubmit }) => {
             <Button text="Login" onClick={() => setActive('login')} /> 
           </div>
           <Grid item xs={12} className='create-link' size='h2'>
-              <Link text='Create account'/>
+              <Link href='sign-up' text='Create account'/>
           </Grid>
       </div>
     </div>
