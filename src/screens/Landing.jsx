@@ -19,7 +19,7 @@ const Landing = () => {
               <Link text="Something" />
             </div>
           </Box>
-          <Box className="login-landing">
+          <Box className="login-landing" y>
             <Button href="login" text="Login" small bgColor="light" />
           </Box>
         </Toolbar>
