@@ -1,23 +1,21 @@
+import React from 'react';
 import { styled } from '@mui/system';
 import { Button as MButton } from '@mui/material';
 
-
-const StyledButton = styled(MButton)(({ theme, textColor, bgColor, small }) => ({
-  backgroundColor: theme.palette.common[bgColor],
+const StyledButton = styled(MButton)(({ theme, textColor, bgColor, small, marginBottom }) => ({
+  // backgroundColor: theme.palette.common[bgColor],
   color: theme.palette.common[textColor],
   borderRadius: small ? 20 : 15,
   fontSize: small ? 14 : 16,
   width: small ? '90px' : '220px',
-  marginBottom: '20px',
+  marginBottom: marginBottom,
   backgroundColor: '#1B4242',
   '&:hover': {
     backgroundColor: theme.palette[textColor],
-    backgroundColor: '#1B4242',
   },
 }));
 
-const Button = ({ text, onClick, textColor, bgColor, small, href }) => {
-
+const Button = ({ text, onClick, textColor, bgColor, small, href, marginBottom }) => {
   return (
     <StyledButton
       variant="contained"
@@ -26,6 +24,7 @@ const Button = ({ text, onClick, textColor, bgColor, small, href }) => {
       bgColor={bgColor}
       small={small}
       href={href}
+      marginBottom={marginBottom}
     >
       {text}
     </StyledButton>

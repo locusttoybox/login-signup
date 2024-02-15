@@ -11,6 +11,12 @@ const StyledToolbar = styled(MToolbar)(({ theme }) => ({
   '& *': {
     color: '#fff',
   },
+  '&.MuiToolbar-root.MuiToolbar-gutters.MuiToolbar-regular': {
+    justifyContent: 'space-between',
+    paddingLeft: '10%',
+    paddingRight: '10%',
+    marginTop: '10px',
+  },
 }));
 
 const Navbar = ({ children, size }) => {
@@ -32,9 +38,7 @@ const MyAppBar = () => {
             <Link text="Something" />
           </div>
         </Box>
-        <Box className="login-landing">
-          <Button href="login" text="Login" small bgColor="light" />
-        </Box>
+        <Button href="login" text="Login" small bgColor="light" style={{ marginBottom: '0' }} />
       </Navbar>
     </AppBar>
   );
