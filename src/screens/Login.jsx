@@ -1,5 +1,5 @@
-import React, {useState} from 'react';
-import {Typography, Grid} from '@mui/material';
+import React, { useState } from 'react';
+import { Grid } from '@mui/material';
 import '../components/styles.css';
 
 import userIcon from '../assets/user.png';
@@ -17,21 +17,16 @@ const Login = ({ onSubmit }) => {
 
   return (
     <div className="container">
-      <Grid className='menu-links' item sx={6}>
-      <div className='accout-text'>
-          <Title text='Login' size='h2'/>
-      </div>
-      </Grid> 
+      <Grid className="menu-links" item sx={6}>
+        <div className="accout-text">
+          <Title text="Login" size="h2" />
+        </div>
+      </Grid>
       <div className="inputs">
         <Input placeholder="Username" size="medium" icon={userIcon} />
         <Input placeholder="Password" size="medium" icon={passwordIcon} />
-        <Grid
-          container
-          alignItems="center"
-          justifyContent="space-between"
-          style={{marginTop: '12px'}}
-        >
-          <Grid item container alignItems="center" xs={6}>
+        <Grid container alignItems="center" justifyContent="space-between" style={{ marginTop: '12px' }}>
+          <Grid item container alignItems="center" xs={6} style={{ marginBottom: '24px' }}>
             <Checkbox
               checked={rememberMe}
               onChange={() => {
@@ -40,16 +35,16 @@ const Login = ({ onSubmit }) => {
             />
             <Text text="Remember me" />
           </Grid>
-          <Grid item xs={6} style={{ textAlign: 'right' }}>
+          <Grid item xs={6} style={{ textAlign: 'right', marginBottom: '24px' }}>
             <Link text="Forgot password"></Link>
           </Grid>
         </Grid>
-          <div className='button-container'>
-            <Button text="Login" onClick={() => setActive('login')} /> 
-          </div>
-          <Grid item xs={12} className='create-link' size='h2'>
-              <Link text='Create account'/>
-          </Grid>
+        <div className="button-container">
+          <Button text="Login" onClick={() => setActive('login')} marginBottom="20px" />
+        </div>
+        <Grid item xs={12} className="create-link" size="h2">
+          <Link href="sign-up" text="Create account" />
+        </Grid>
       </div>
     </div>
   );

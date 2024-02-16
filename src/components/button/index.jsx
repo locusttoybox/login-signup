@@ -1,37 +1,30 @@
+import React from 'react';
 import { styled } from '@mui/system';
 import { Button as MButton } from '@mui/material';
 
-const StyledButton = styled(MButton)(({ theme, color }) => ({
-  backgroundColor: theme.palette.common.main,
-  color: theme.palette.common[color],
-  borderRadius: 15,
-  fontSize: 16,
-  width: '220px',
-  marginBottom: '20px',
+const StyledButton = styled(MButton)(({ theme, textColor, bgColor, small, marginBottom }) => ({
+  // backgroundColor: theme.palette.common[bgColor],
+  color: theme.palette.common[textColor],
+  borderRadius: small ? 20 : 15,
+  fontSize: small ? 14 : 16,
+  width: small ? '90px' : '220px',
+  marginBottom: marginBottom,
   backgroundColor: '#1B4242',
   '&:hover': {
-    backgroundColor: theme.palette[color],
-    backgroundColor: '#1B4242',
+    backgroundColor: theme.palette[textColor],
   },
 }));
 
-
-const ActionButton = styled(MButton)(({ theme, customStyle }) => ({
-  backgroundColor: theme.palette.common.main,
-  color: customStyle ? theme.palette.common.main : theme.palette.common[color],
-  borderRadius: 10,
-  fontSize: 40,
-  width: '180px',
-}));
-
-const Button = ({ text, onClick, color, customStyle }) => {
-  const StyledComponent = customStyle ? ActionButton : StyledButton;
-
+const Button = ({ text, onClick, textColor, bgColor, small, href, marginBottom }) => {
   return (
     <StyledButton
       variant="contained"
       onClick={onClick}
-      color={color}
+      textColor={textColor}
+      bgColor={bgColor}
+      small={small}
+      href={href}
+      marginBottom={marginBottom}
     >
       {text}
     </StyledButton>

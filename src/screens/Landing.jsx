@@ -1,48 +1,31 @@
 import React from 'react';
-import { Container, Toolbar, AppBar, Grid, Box } from '@mui/material';
+import { Grid } from '@mui/material';
 import '../index.css';
 
 import Title from '../components/typography';
 import Button from '../components/button';
-import Link from '../components/link';
-import Navbar from '../components/navbar';
+import Page from '../components/page';
 
+import MyAppBar from '../components/navbar';
 
 const Landing = () => {
-
-
-    return (
-        <Container>
-            <AppBar position='fixed' style={{ background: 'transparent', boxShadow: 'none' }}>
-                <Toolbar className='menu'>
-                    <Navbar>
-                        <div className="nav-links">
-                            <Link text='About'/>
-                            <Link text='Contact'/>
-                            <Link text='Something'/>
-                        <div>
-                            <Button text='Login' customStyle/>
-                        </div>
-                        </div>
-                    </Navbar>
-                </Toolbar>
-            </AppBar>
-
-            <Grid container alignItems='center' height='100vh'>
-                <Grid item sx={12} md={8}>
-                 <div className="container-landing">
-                    <div className="title">
-                        <Title text='Welcome to your nameday app' size='h1' />   
-                    </div>
-                    <div className='subtitle'>
-                        <Title text='Short discription about app and features' size='h3' />
-                    </div>
-                    <Button text='Enter' />
-                </div>
-                </Grid>
-            </Grid>
-        </Container>
-    );
+  return (
+    <Page AppBarComponent={MyAppBar}>
+      <Grid container alignItems="center" height="100vh">
+        <Grid item sx={12} md={8}>
+          <div className="container-landing">
+            <div className="title">
+              <Title text="Welcome to your nameday app" size="h1" />
+            </div>
+            <div className="subtitle">
+              <Title text="Short discription about app and features" size="h3" />
+            </div>
+            <Button text="Explore" />
+          </div>
+        </Grid>
+      </Grid>
+    </Page>
+  );
 };
 
 export default Landing;

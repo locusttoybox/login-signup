@@ -3,7 +3,8 @@ import { Typography as MTypography } from '@mui/material';
 
 
 const StyledTypography = styled(MTypography)(({ theme }) => ({
-    color: theme.palette.secondary.main,
+    color: theme.palette.main,
+    color: '#1B4242',
   
     '&.Mui-checked': {
       color: theme.palette.secondary.main,

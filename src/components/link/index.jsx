@@ -3,15 +3,14 @@ import { Link as MLink } from '@mui/material'
 
 const StyledLink = styled(MLink) (({ theme, large }) => ({
         color: theme.palette.secondary.main,
-        color: '#092635',
         textDecoration: 'none',
         fontSize:  large ? 24: 16,
         fontFamily: 'Roboto',        
 }))
 
-const Link = ({ text, large }) => {
+const Link = ({ text, large, href }) => {
         return (
-        <StyledLink href='#' large={large}>
+        <StyledLink href={href} large={large}>
          {text}
         </StyledLink>
         )               
