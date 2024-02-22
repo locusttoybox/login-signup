@@ -1,13 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Landing from './screens/Landing';
 import Login from './screens/Login';
 import Signup from './screens/Signup';
-import ErrorPage from "./screens/ErrorPage";
+import ErrorPage from './screens/ErrorPage';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 
@@ -21,23 +18,23 @@ const theme = createTheme({
     secondary: {
       main: '#1B4242',
     },
-    common :{
+    common: {
       main: '#9EC8B9',
       light: '#A87C7C',
-      dark: 'black'
-    }
+      dark: 'black',
+    },
   },
   typography: {
-    h1 : {
+    h1: {
       fontSize: 80,
       marginRight: 75,
       fontFamily: 'DM Sans',
       fontWeight: 600,
       letterSpacing: 2,
-      color: '#1B4242'
+      color: '#1B4242',
     },
 
-    h2 : {
+    h2: {
       fontSize: 32,
       color: '#F5EEE6',
       fontFamily: 'DM Sans',
@@ -45,42 +42,38 @@ const theme = createTheme({
       letterSpacing: 1,
     },
 
-    h3 : {
+    h3: {
       fontSize: 24,
       fontFamily: 'DM Sans',
     },
 
-    h4 : {
+    h4: {
       fontSize: 16,
       color: '#F5EEE6',
       fontFamily: 'Roboto',
     },
-
-
-  }
+  },
 });
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: '/',
     element: <Landing />,
     errorElement: <ErrorPage />,
   },
 
   {
-    path: "login",
+    path: 'login',
     element: <Login />,
     errorElement: <ErrorPage />,
   },
 
   {
-    path: "sign-up",
+    path: 'sign-up',
     element: <Signup />,
     errorElement: <ErrorPage />,
   },
-
 ]);
-
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
