@@ -8,6 +8,9 @@ import ErrorPage from './screens/ErrorPage';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 
+import store from './app/store';
+import { Provider } from 'react-redux';
+
 import { ThemeProvider, createTheme } from '@mui/material';
 
 const theme = createTheme({
@@ -78,9 +81,11 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ThemeProvider theme={theme}>
-      <RouterProvider router={router} />
-    </ThemeProvider>
+    <Provider store={store}>
+      <ThemeProvider theme={theme}>
+        <RouterProvider router={router} />
+      </ThemeProvider>
+    </Provider>
   </React.StrictMode>
 );
 
