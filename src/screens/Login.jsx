@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { Grid } from '@mui/material';
 import '../components/styles.css';
-import { loginUser } from '../features/couterSlice';
+import loginUser from '../features/counter/couterSlice';
 
 import userIcon from '../assets/user.png';
 import passwordIcon from '../assets/padlock.png';
