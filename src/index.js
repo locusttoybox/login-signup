@@ -8,7 +8,7 @@ import ErrorPage from './screens/ErrorPage';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 
-import store from './app/store';
+import store from './components/app/store';
 import { Provider } from 'react-redux';
 
 import { ThemeProvider, createTheme } from '@mui/material';
