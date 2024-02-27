@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { Grid } from '@mui/material';
 import '../components/styles.css';
@@ -58,6 +59,10 @@ const Login = ({ onSubmit }) => {
       </div>
     </div>
   );
+};
+
+Login.propTypes = {
+  onSubmit: PropTypes.func,
 };
 
 export default Login;

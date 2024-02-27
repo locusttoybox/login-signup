@@ -1,38 +1,32 @@
-  import React from 'react';
-  import { TextField, Typography, Grid } from '@mui/material';
-  import '../components/styles.css';
-  import Button from '../components/button';
+import React from 'react';
+import '../components/styles.css';
+import Button from '../components/button';
 
+import userIcon from '../assets/user.png';
+import emailIcon from '../assets/mail.png';
+import passwordIcon from '../assets/padlock.png';
 
-  import userIcon from '../assets/user.png';
-  import emailIcon from '../assets/mail.png';
-  import passwordIcon from '../assets/padlock.png';
+import Input from '../components/input';
+import Title from '../components/typography';
 
-  import Input from '../components/input';
-  import Title from '../components/typography';
-
-
-  const SignUp = ({ onSubmit }) => {
-
-    return (
-      <div className='container'>
-        <div>
-          <div className='accout-text'>
-          <Title text='Create Account' size='h2'/>
-          </div>
-        </div>
-        <div className='inputs'>
-          <Input placeholder="Username" size="medium" icon={userIcon} />
-          <Input placeholder="Email" size="medium" icon={emailIcon} />
-          <Input placeholder="Password" size="medium" icon={passwordIcon} />
-        </div>
-        <div className='button-container'>
-            <Button text="Sign up" onClick={() => setActive('signup')} /> 
+const SignUp = ({ onSubmit }) => {
+  return (
+    <div className="container">
+      <div>
+        <div className="accout-text">
+          <Title text="Create Account" size="h2" />
         </div>
       </div>
-    )
-  }
+      <div className="inputs">
+        <Input placeholder="Username" size="medium" icon={userIcon} />
+        <Input placeholder="Email" size="medium" icon={emailIcon} />
+        <Input placeholder="Password" size="medium" icon={passwordIcon} />
+      </div>
+      <div className="button-container">
+        <Button text="Sign up" onClick={() => setActive('signup')} />
+      </div>
+    </div>
+  );
+};
 
-
-
-  export default SignUp;
+export default SignUp;
