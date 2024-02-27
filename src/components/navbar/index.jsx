@@ -25,6 +25,11 @@ const Navbar = ({ children, size }) => {
   return <StyledToolbar variant={size}>{children}</StyledToolbar>;
 };
 
+Navbar.propTypes = {
+  size: PropTypes.oneOf(['regular', 'dense', 'gutters']),
+  children: PropTypes.node.isRequired,
+};
+
 const MyAppBar = () => {
   return (
     <AppBar
@@ -44,11 +49,6 @@ const MyAppBar = () => {
       </Navbar>
     </AppBar>
   );
-};
-
-MyAppBar.propTypes = {
-  size: PropTypes.oneOf(['regular', 'dense', 'gutters']),
-  children: PropTypes.node.isRequired,
 };
 
 export default MyAppBar;

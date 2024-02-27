@@ -1,3 +1,4 @@
+import React from 'react';
 import { styled } from '@mui/material';
 import PropTypes from 'prop-types';
 import { Typography as MTypography } from '@mui/material';

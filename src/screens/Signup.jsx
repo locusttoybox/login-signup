@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import '../components/styles.css';
 import Button from '../components/button';
 
@@ -27,6 +28,10 @@ const SignUp = ({ onSubmit }) => {
       </div>
     </div>
   );
+};
+
+SignUp.propTypes = {
+  onSumbit: PropTypes.func,
 };
 
 export default SignUp;
