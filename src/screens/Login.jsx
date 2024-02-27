@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
 import { Grid } from '@mui/material';
 import '../components/styles.css';
+import { loginUser } from '../features/user/userSlice';
 
 import userIcon from '../assets/user.png';
 import passwordIcon from '../assets/padlock.png';
@@ -14,6 +16,14 @@ import Title from '../components/typography';
 
 const Login = ({ onSubmit }) => {
   const [rememberMe, setRememberMe] = useState();
+  const dispatch = useDispatch();
+
+  const handleLogin = () => {
+    const user = {
+      username: 'exampleUser',
+    };
+    dispatch(loginUser(user));
+  };
 
   return (
     <div className="container">
@@ -40,7 +50,7 @@ const Login = ({ onSubmit }) => {
           </Grid>
         </Grid>
         <div className="button-container">
-          <Button text="Login" onClick={() => setActive('login')} marginBottom="20px" />
+          <Button text="Login" onClick={handleLogin} marginBottom="20px" />
         </div>
         <Grid item xs={12} className="create-link" size="h2">
           <Link href="sign-up" text="Create account" />
