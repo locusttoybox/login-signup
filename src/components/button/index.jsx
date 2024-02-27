@@ -1,8 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { styled } from '@mui/system';
 import { Button as MButton } from '@mui/material';
 
-const StyledButton = styled(MButton)(({ theme, textColor, bgColor, small, marginBottom }) => ({
+const StyledButton = styled(MButton)(({ theme, textColor, small, marginBottom }) => ({
   // backgroundColor: theme.palette.common[bgColor],
   color: theme.palette.common[textColor],
   borderRadius: small ? 20 : 15,
@@ -29,6 +30,16 @@ const Button = ({ text, onClick, textColor, bgColor, small, href, marginBottom }
       {text}
     </StyledButton>
   );
+};
+
+Button.propTypes = {
+  text: PropTypes.string.isRequired,
+  onClick: PropTypes.func,
+  textColor: PropTypes.string,
+  bgColor: PropTypes.string,
+  small: PropTypes.bool,
+  href: PropTypes.string,
+  marginBottom: PropTypes.string,
 };
 
 export default Button;

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Container } from '@mui/material';
 
 const Page = ({ children, AppBarComponent }) => {
@@ -8,6 +9,11 @@ const Page = ({ children, AppBarComponent }) => {
       <Container>{children}</Container>
     </>
   );
+};
+
+Page.propTypes = {
+  children: PropTypes.node.isRequired,
+  AppBarComponent: PropTypes.elementType,
 };
 
 export default Page;

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { styled } from '@mui/material';
 import { AppBar, Box } from '@mui/material';
 import { Toolbar as MToolbar } from '@mui/material';
@@ -7,6 +8,7 @@ import Button from '../button';
 import Link from '../link';
 
 const StyledToolbar = styled(MToolbar)(({ theme }) => ({
+  color: theme.palette.main,
   backgroundColor: 'transparent',
   '& *': {
     color: '#fff',
@@ -21,6 +23,11 @@ const StyledToolbar = styled(MToolbar)(({ theme }) => ({
 
 const Navbar = ({ children, size }) => {
   return <StyledToolbar variant={size}>{children}</StyledToolbar>;
+};
+
+Navbar.propTypes = {
+  size: PropTypes.oneOf(['regular', 'dense', 'gutters']),
+  children: PropTypes.node.isRequired,
 };
 
 const MyAppBar = () => {
