@@ -13,7 +13,8 @@ export const userSlice = createSlice({
     },
 
     logoutUser: (state) => {
-      (state.user = 0), (loginDate = 0);
+      state.user = 0;
+      loginDate = 0;
     },
   },
 });
