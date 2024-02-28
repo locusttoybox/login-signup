@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { styled } from '@mui/material';
 import { Typography as MTypography } from '@mui/material';
 
@@ -18,6 +19,11 @@ const Text = ({ text, fontSize }) => {
       {fontSize}
     </StyledTypography>
   );
+};
+
+Text.propTypes = {
+  text: PropTypes.string,
+  fontSize: PropTypes.bool,
 };
 
 export default Text;

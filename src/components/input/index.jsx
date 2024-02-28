@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { InputAdornment, styled } from '@mui/material';
 import { TextField as MInput } from '@mui/material';
 
@@ -38,6 +39,11 @@ const Input = ({ size, icon, ...props }) => {
       }}
     />
   );
+};
+
+Input.propTypes = {
+  size: PropTypes.bool,
+  icon: PropTypes.object,
 };
 
 export default Input;

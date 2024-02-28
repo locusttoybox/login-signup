@@ -14,7 +14,7 @@ export const userSlice = createSlice({
 
     logoutUser: (state) => {
       state.user = 0;
-      loginDate = 0;
+      state.loginDate = 0;
     },
   },
 });

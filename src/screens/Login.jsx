@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { Grid } from '@mui/material';
 import '../components/styles.css';
@@ -18,11 +19,15 @@ const Login = ({ onSubmit }) => {
   const [rememberMe, setRememberMe] = useState();
   const dispatch = useDispatch();
 
-  const handleLogin = () => {
+  const handleLogin = (event) => {
+    event.preventDefault();
     const user = {
       username: 'exampleUser',
     };
     dispatch(loginUser(user));
+    if (onSubmit) {
+      onSubmit();
+    }
   };
 
   return (
@@ -32,7 +37,7 @@ const Login = ({ onSubmit }) => {
           <Title text="Login" size="h2" />
         </div>
       </Grid>
-      <div className="inputs">
+      <form onSubmit={handleLogin} className="inputs">
         <Input placeholder="Username" size="medium" icon={userIcon} />
         <Input placeholder="Password" size="medium" icon={passwordIcon} />
         <Grid container alignItems="center" justifyContent="space-between" style={{ marginTop: '12px' }}>
@@ -55,9 +60,13 @@ const Login = ({ onSubmit }) => {
         <Grid item xs={12} className="create-link" size="h2">
           <Link href="sign-up" text="Create account" />
         </Grid>
-      </div>
+      </form>
     </div>
   );
+};
+
+Login.propTypes = {
+  onSubmit: PropTypes.func,
 };
 
 export default Login;
