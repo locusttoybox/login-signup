@@ -1,10 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+
 import Landing from './screens/Landing';
 import Login from './screens/Login';
 import Signup from './screens/Signup';
 import ErrorPage from './screens/ErrorPage';
+import Dashboard from './screens/Dashboard';
+
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 
@@ -74,6 +77,11 @@ const router = createBrowserRouter([
   {
     path: 'sign-up',
     element: <Signup />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: 'dashboard',
+    element: <Dashboard />,
     errorElement: <ErrorPage />,
   },
 ]);
