@@ -4,6 +4,7 @@ import { Grid, List, ListItem, ListItemText, Box } from '@mui/material';
 import MyAppBar from '../components/navbar';
 import Page from '../components/page';
 import MenuList from '../components/menuList';
+import Text from '../components/text';
 
 const Dashboard = () => {
   return (
@@ -17,7 +18,7 @@ const Dashboard = () => {
                   <ListItemText primary="Something" />
                 </MenuList>
                 <ListItem button>
-                  <ListItemText primary="Something" />
+                  <Text text="Something" />
                 </ListItem>
                 <ListItem button>
                   <ListItemText primary="Something" />
