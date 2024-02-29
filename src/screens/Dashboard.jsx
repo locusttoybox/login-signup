@@ -7,14 +7,16 @@ import Page from '../components/page';
 const Dashboard = () => {
   return (
     <Page AppBarComponent={MyAppBar}>
-      <Grid item sx={3}>
-        <Title text="something" />
-      </Grid>
-      <Grid item sx={6}>
-        <Title text="is out" />
-      </Grid>
-      <Grid item sx={3}>
-        <Title text="there" />
+      <Grid container spacing={2}>
+        <Grid item xs={12} md={3} style={{ padding: '0' }}>
+          <Title text="something" />
+        </Grid>
+        <Grid item xs={12} md={9} style={{ padding: '0' }}>
+          <Title text="something" />
+        </Grid>
+        <Grid item xs={12} md={3} style={{ padding: '0' }}>
+          <Title text="something" />
+        </Grid>
       </Grid>
     </Page>
   );
