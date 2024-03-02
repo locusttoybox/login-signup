@@ -4,3 +4,11 @@
   gap: 11px;
   width: 100%;
 }
+
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  padding-bottom: 0;
+}

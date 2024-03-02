@@ -1,10 +1,9 @@
 import React from 'react';
-import { Grid, List, ListItem, ListItemText, Box } from '@mui/material';
-// import Title from '../components/typography';
+import { Grid, List, Box } from '@mui/material';
 import MyAppBar from '../components/navbar';
 import Page from '../components/page';
 import MenuList from '../components/menuList';
-import Text from '../components/text';
+import '../components/styles.css';
 
 const Dashboard = () => {
   return (
@@ -14,24 +13,11 @@ const Dashboard = () => {
           <Grid item xs={12} md={3}>
             <Box component="section" sx={{ p: 2, borderRadius: '10px', backgroundColor: 'white' }}>
               <List sx={{ paddingTop: 0 }}>
-                <MenuList button>
-                  <ListItemText primary="Something" />
-                </MenuList>
-                <ListItem button>
-                  <Text text="Something" />
-                </ListItem>
-                <ListItem button>
-                  <ListItemText primary="Something" />
-                </ListItem>
-                <ListItem button>
-                  <ListItemText primary="Something" />
-                </ListItem>
-                <ListItem button>
-                  <ListItemText primary="Something" />
-                </ListItem>
-                <ListItem button>
-                  <ListItemText primary="Something" />
-                </ListItem>
+                <MenuList
+                  sx={{ fontSize: 'h3' }}
+                  className="menu-list"
+                  items={['Something', 'Something', 'Something', 'Something', 'Something', 'Something', 'Something']}
+                />
               </List>
             </Box>
           </Grid>
