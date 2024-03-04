@@ -5,6 +5,8 @@ import Page from '../components/page';
 import Title from '../components/typography';
 import MenuList from '../components/menuList';
 import '../components/styles.css';
+import profileImage from '../assets/flamingo.png';
+
 // import Calendar from '../components/calendar';
 
 const Dashboard = () => {
@@ -13,7 +15,18 @@ const Dashboard = () => {
       <div className="container-dashboard">
         <Grid container spacing={2}>
           <Grid item xs={12} md={3}>
-            <Box component="section" sx={{ p: 2, borderRadius: '10px', backgroundColor: 'white' }}>
+            <Box
+              component="section"
+              sx={{
+                p: 2,
+                borderRadius: '10px',
+                backgroundColor: 'white',
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+              }}
+            >
+              <img src={profileImage} alt="" style={{ width: '100px', justifyContent: 'center', margin: '50px' }} />
               <List sx={{ paddingTop: 0 }}>
                 <MenuList
                   sx={{ fontSize: 'h3' }}
@@ -27,10 +40,10 @@ const Dashboard = () => {
             <div className="welcome-text">
               <Title text="Welcome Your Name" size="h2" />
             </div>
-            <Grid item xs={12} md={6}>
-              <Box component="section" sx={{ borderRadius: '10px', backgroundColor: 'white' }}>
-                <Title text="some box" />
-              </Box>
+            <Grid>
+              <div style={{ borderRadius: '10px', backgroundColor: 'white', height: '200px' }}>
+                <Title text="some text here" />
+              </div>
             </Grid>
           </Grid>
           <Grid item xs={12} md={3}>
