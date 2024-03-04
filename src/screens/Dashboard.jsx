@@ -26,7 +26,7 @@ const Dashboard = () => {
                 alignItems: 'center',
               }}
             >
-              <div className="welcome-text">
+              <div className="sub-text">
                 <Text text="Welcome Your Name" size="h3" />
               </div>
               <img src={profileImage} alt="" style={{ width: '100px', justifyContent: 'center', margin: '30px' }} />
@@ -64,6 +64,9 @@ const Dashboard = () => {
                 </Grid>
               </Grid>
             </Grid>
+            <div className="sub-text">
+              <Text text="Gift Ideas" size="h3" />
+            </div>
           </Grid>
           <Grid item xs={12} md={3}>
             <Box component="section" sx={{ borderRadius: '10px', backgroundColor: 'white', height: '200px' }}>
