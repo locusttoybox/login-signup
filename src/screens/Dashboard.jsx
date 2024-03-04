@@ -4,6 +4,8 @@ import MyAppBar from '../components/navbar';
 import Page from '../components/page';
 import MenuList from '../components/menuList';
 import '../components/styles.css';
+import profileImage from '../assets/orange.avif';
+import DatePicker from '@mui/lab/DatePicker';
 
 const Dashboard = () => {
   return (
@@ -22,10 +24,14 @@ const Dashboard = () => {
             </Box>
           </Grid>
           <Grid item xs={12} md={9}>
-            <Box component="section" sx={{ p: 2, borderRadius: '10px', backgroundColor: 'white' }}>
+            <Box component="section">
+              <img src={profileImage} alt="avocado" style={{ borderRadius: '10px', height: '200px' }} />
               <div>Something</div>
             </Box>
           </Grid>
+          <Box component="section">
+            <DatePicker />
+          </Box>
         </Grid>
       </div>
     </Page>
