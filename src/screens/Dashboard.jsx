@@ -5,7 +5,6 @@ import Page from '../components/page';
 import Title from '../components/typography';
 import MenuList from '../components/menuList';
 import '../components/styles.css';
-import profileImage from '../assets/orange.avif';
 // import Calendar from '../components/calendar';
 
 const Dashboard = () => {
@@ -24,13 +23,21 @@ const Dashboard = () => {
               </List>
             </Box>
           </Grid>
-          <Grid item xs={12} md={9}>
-            <Box component="section">
-              <Title style={{ marginBottom: '20px' }} text="Welcome Your Name" size="h2" />
-              <img src={profileImage} alt="avocado" style={{ borderRadius: '10px', width: '50%' }} />
+          <Grid item xs={12} md={6}>
+            <div className="welcome-text">
+              <Title text="Welcome Your Name" size="h2" />
+            </div>
+            <Grid item xs={12} md={6}>
+              <Box component="section" sx={{ borderRadius: '10px', backgroundColor: 'white' }}>
+                <Title text="some box" />
+              </Box>
+            </Grid>
+          </Grid>
+          <Grid item xs={12} md={3}>
+            <Box component="section" sx={{ borderRadius: '10px', backgroundColor: 'white' }}>
+              {/* <Calendar /> */}
             </Box>
           </Grid>
-          <Box component="section">{/* <Calendar /> */}</Box>
         </Grid>
       </div>
     </Page>
