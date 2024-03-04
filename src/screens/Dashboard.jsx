@@ -40,10 +40,29 @@ const Dashboard = () => {
             </Box>
           </Grid>
           <Grid item xs={12} md={6}>
-            <Grid>
-              <div style={{ borderRadius: '10px', backgroundColor: 'white', height: '200px' }}>
-                <Text text="some text here" />
-              </div>
+            <Grid container direction="column" spacing={2}>
+              <Grid item xs={12}>
+                <div style={{ borderRadius: '10px', backgroundColor: 'white', height: '200px' }}>
+                  <Text text="some text here" />
+                </div>
+              </Grid>
+              <Grid item container direction="row" spacing={2} xs={12}>
+                <Grid item xs={12} sm={6} md={4}>
+                  <div className="text-container">
+                    <Text text="Namedays" />
+                  </div>
+                </Grid>
+                <Grid item xs={12} sm={6} md={4}>
+                  <div className="text-container">
+                    <Text text="Birthdays" />
+                  </div>
+                </Grid>
+                <Grid item xs={12} sm={6} md={4}>
+                  <div className="text-container">
+                    <Text text="Anniversaries" />
+                  </div>
+                </Grid>
+              </Grid>
             </Grid>
           </Grid>
           <Grid item xs={12} md={3}>

@@ -20,3 +20,13 @@
 .welcome-text {
   margin-top: 30px;
 }
+
+.text-container {
+  border-radius: 10px;
+  background-color: white;
+  margin-top: 20px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
