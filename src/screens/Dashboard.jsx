@@ -2,7 +2,7 @@ import React from 'react';
 import { Grid, List, Box } from '@mui/material';
 import MyAppBar from '../components/navbar';
 import Page from '../components/page';
-import Title from '../components/typography';
+import Text from '../components/typography';
 import MenuList from '../components/menuList';
 import '../components/styles.css';
 import profileImage from '../assets/flamingo.png';
@@ -26,7 +26,10 @@ const Dashboard = () => {
                 alignItems: 'center',
               }}
             >
-              <img src={profileImage} alt="" style={{ width: '100px', justifyContent: 'center', margin: '50px' }} />
+              <div className="welcome-text">
+                <Text text="Welcome Your Name" size="h3" />
+              </div>
+              <img src={profileImage} alt="" style={{ width: '100px', justifyContent: 'center', margin: '30px' }} />
               <List sx={{ paddingTop: 0 }}>
                 <MenuList
                   sx={{ fontSize: 'h3' }}
@@ -37,17 +40,15 @@ const Dashboard = () => {
             </Box>
           </Grid>
           <Grid item xs={12} md={6}>
-            <div className="welcome-text">
-              <Title text="Welcome Your Name" size="h2" />
-            </div>
             <Grid>
               <div style={{ borderRadius: '10px', backgroundColor: 'white', height: '200px' }}>
-                <Title text="some text here" />
+                <Text text="some text here" />
               </div>
             </Grid>
           </Grid>
           <Grid item xs={12} md={3}>
-            <Box component="section" sx={{ borderRadius: '10px', backgroundColor: 'white' }}>
+            <Box component="section" sx={{ borderRadius: '10px', backgroundColor: 'white', height: '200px' }}>
+              <Text text="calendar goes here" />
               {/* <Calendar /> */}
             </Box>
           </Grid>
