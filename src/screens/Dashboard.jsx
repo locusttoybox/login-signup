@@ -67,6 +67,16 @@ const Dashboard = () => {
             <div className="sub-text">
               <Text text="Gift Ideas" size="h3" />
             </div>
+            <Grid item xs={12} sm={6} md={6}>
+              <div className="gift-container">
+                <Text text="Anniversaries" />
+              </div>
+            </Grid>
+            <Grid item xs={12} sm={6} md={6}>
+              <div className="gift-container">
+                <Text text="Anniversaries" />
+              </div>
+            </Grid>
           </Grid>
           <Grid item xs={12} md={3}>
             <Box component="section" sx={{ borderRadius: '10px', backgroundColor: 'white', height: '200px' }}>
