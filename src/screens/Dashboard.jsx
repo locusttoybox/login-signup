@@ -4,6 +4,7 @@ import MyAppBar from '../components/navbar';
 import Page from '../components/page';
 import Text from '../components/typography';
 import MenuList from '../components/menuList';
+import Link from '../components/link';
 import '../components/styles.css';
 import profileImage from '../assets/flamingo.png';
 
@@ -26,10 +27,11 @@ const Dashboard = () => {
                 alignItems: 'center',
               }}
             >
-              <div className="sub-text">
-                <Text text="Welcome Your Name" size="h3" />
-              </div>
+              {/* <div className="sub-text">
+                <Text text="Welcome Rhea von Tree" size="h3" style={{ justify}}/>
+              </div> */}
               <img src={profileImage} alt="" style={{ width: '100px', justifyContent: 'center', margin: '30px' }} />
+              <Link href="user-profile" text="Profile" large={false} marginBottom={true} />
               <List sx={{ paddingTop: 0 }}>
                 <MenuList
                   sx={{ fontSize: 'h3' }}
