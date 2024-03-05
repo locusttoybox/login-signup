@@ -78,6 +78,16 @@ const Dashboard = () => {
                   <Text text="Gifts" />
                 </div>
               </Grid>
+              <Grid item xs={12} sm={6} md={6}>
+                <div className="gift-container">
+                  <Text text="Gifts" />
+                </div>
+              </Grid>
+              <Grid item xs={12} sm={6} md={6}>
+                <div className="gift-container">
+                  <Text text="Gifts" />
+                </div>
+              </Grid>
             </Grid>
           </Grid>
           <Grid item xs={12} md={3}>
