@@ -64,7 +64,6 @@ const Dashboard = () => {
                 </Grid>
               </Grid>
             </Grid>
-
             <div className="sub-text">
               <Text text="Gift Ideas" size="h3" />
             </div>
