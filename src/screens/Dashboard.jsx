@@ -29,7 +29,7 @@ const Dashboard = () => {
               }}
             >
               <div>
-                <Text text="Welcome" size="h2" />
+                <Text text="Welcome" size="h3" />
               </div>
               <div className="user-name">
                 <Text text="Rhea von Tree" size="h3" />
