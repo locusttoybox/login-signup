@@ -1,26 +1,26 @@
 import React from 'react';
 // import PropTypes from 'prop-types';
 import { LocalizationProvider } from '@mui/x-date-pickers';
-import { DatePicker as MCalendar } from '@mui/lab';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { styled } from '@mui/material';
-import { TextField } from '@mui/material';
+import { TextField as MTextField } from '@mui/material';
+import { StaticDatePicker } from '@mui/x-date-pickers/StaticDatePicker';
 
-const StyledCalendar = styled(MCalendar)(({ theme }) => ({
-  color: theme.palette.primary,
+const StyledTextField = styled(MTextField)(({ theme }) => ({
+  color: theme.palette.primary.main,
 }));
 
 const Calendar = () => {
   const [value, setValue] = React.useState(null);
   return (
     <LocalizationProvider dateAdapter={AdapterDayjs}>
-      <StyledCalendar
+      <StaticDatePicker
         label="Date"
         value={value}
         onChange={(newValue) => {
           setValue(newValue);
         }}
-        renderInput={(params) => <TextField {...params} />}
+        renderInput={(params) => <StyledTextField {...params} />}
       />
     </LocalizationProvider>
   );

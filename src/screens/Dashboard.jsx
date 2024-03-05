@@ -7,7 +7,7 @@ import MenuList from '../components/menuList';
 import '../components/styles.css';
 import profileImage from '../assets/flamingo.png';
 
-// import Calendar from '../components/calendar';
+import Calendar from '../components/calendar';
 
 const Dashboard = () => {
   return (
@@ -64,25 +64,25 @@ const Dashboard = () => {
                 </Grid>
               </Grid>
             </Grid>
+
             <div className="sub-text">
               <Text text="Gift Ideas" size="h3" />
             </div>
-            <Grid item xs={12} sm={6} md={6}>
-              <div className="gift-container">
-                <Text text="Anniversaries" />
-              </div>
-            </Grid>
-            <Grid item xs={12} sm={6} md={6}>
-              <div className="gift-container">
-                <Text text="Anniversaries" />
-              </div>
+            <Grid item container direction="row" spacing={2} xs={12}>
+              <Grid item xs={12} sm={6} md={6}>
+                <div className="gift-container">
+                  <Text text="Flowers" />
+                </div>
+              </Grid>
+              <Grid item xs={12} sm={6} md={6}>
+                <div className="gift-container">
+                  <Text text="Gifts" />
+                </div>
+              </Grid>
             </Grid>
           </Grid>
           <Grid item xs={12} md={3}>
-            <Box component="section" sx={{ borderRadius: '10px', backgroundColor: 'white', height: '200px' }}>
-              <Text text="calendar goes here" />
-              {/* <Calendar /> */}
-            </Box>
+            <Calendar />
           </Grid>
         </Grid>
       </div>
