@@ -5,9 +5,9 @@ import Page from '../components/page';
 import Text from '../components/typography';
 import MenuList from '../components/menuList';
 import Link from '../components/link';
-import { Avatar } from '@mui/material';
+import Avatar from '../components/userAvatar';
 import '../components/styles.css';
-// import profileImage from '../assets/profileImage.jpeg';
+import profileImage from '../assets/profileImage.jpeg';
 
 import Calendar from '../components/calendar';
 
@@ -35,7 +35,7 @@ const Dashboard = () => {
                 <Text text="Rhea von Tree" size="h3" />
               </div>
               {/* <Avatar src={profileImage} alt="" sx={{ height: '150px', width: '150px', marginBottom: '10px' }} /> */}
-              <Avatar {...stringAvatar('Rhea von Tree')} />
+              <Avatar src={profileImage} alt="" sx={{ height: '150px', width: '150px', marginBottom: '10px' }} />
               <Link href="user-profile" text="rhea.von.tree@gmail.com" large={false} marginBottom={true} />
               <List sx={{ paddingTop: 0 }}>
                 <MenuList
