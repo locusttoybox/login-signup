@@ -35,7 +35,10 @@ const Dashboard = () => {
                 <Text text="Rhea von Tree" size="h3" />
               </div>
               {/* <Avatar src={profileImage} alt="" sx={{ height: '150px', width: '150px', marginBottom: '10px' }} /> */}
-              <Avatar src={profileImage} alt="" sx={{ height: '150px', width: '150px', marginBottom: '10px' }} />
+              <div className="avatar-img">
+                <Avatar src={profileImage} alt="" />
+              </div>
+
               <Link href="user-profile" text="rhea.von.tree@gmail.com" large={false} marginBottom={true} />
               <List sx={{ paddingTop: 0 }}>
                 <MenuList
