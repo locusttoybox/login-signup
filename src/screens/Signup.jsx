@@ -11,6 +11,11 @@ import Input from '../components/input';
 import Title from '../components/typography';
 
 const SignUp = ({ onSubmit }) => {
+  // const onSubmit = () => {
+  //   console.log('submitting');
+  //   //use firebase to sign up user with email
+  // };
+
   return (
     <div className="container">
       <div>
@@ -24,7 +29,7 @@ const SignUp = ({ onSubmit }) => {
         <Input placeholder="Password" size="medium" icon={passwordIcon} />
       </div>
       <div className="button-container">
-        <Button text="Sign up" onClick={() => setActive('signup')} />
+        <Button text="Sign up" onClick={onSubmit} />
       </div>
     </div>
   );

@@ -8,9 +8,6 @@ import { StaticDatePicker } from '@mui/x-date-pickers/StaticDatePicker';
 
 const StyledTextField = styled(MTextField)(({ theme }) => ({
   color: theme.palette.primary.main,
-  '&. MuiPickersLayout-root css-4pax7l-MuiPickersLayout-root': {
-    borderRadiuss: '10px',
-  },
 }));
 
 const Calendar = () => {
